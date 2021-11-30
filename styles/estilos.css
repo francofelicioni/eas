@@ -264,7 +264,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image:url(/imagenes/banner.jpg);
+    background-image:url("../imagenes/banner.jpg");
     opacity: 0.8;
     
 
