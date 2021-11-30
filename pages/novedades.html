@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shorcut icon" href="/imagenes/favicon.png">
+        <title>ES Site</title>
+        <!-- GOOGLE FONT: ROBOTO -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="link rel="preconnect href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- MI CCS --> 
+        <link rel="stylesheet" href="/styles/estilos.css">
+    </head>
+
+    <body>
+    
+        <header class="header">
+            <div class="container">
+                <div class="logo-nav-redes-conteiner">
+                    
+                    <!-- LOGO -->
+                    <a  class="logo" href="../index.html"> <img class="logo" src="/imagenes/logo.png" alt="logo web"></a>
+                    <!-- FIN LOGO -->
+
+                    <!-- MENU NAVEGABLE-->
+
+                    <label for="menu" class="navLabel">
+                        <img src="/assets/menu.svg" class="navImg">
+                    </label> 
+                    <input type="checkbox" id="menu" class="navInput">    
+                        
+
+                    <nav class="navMenu">
+                            <ul>
+                                <!-- CAJAS-->
+                                <li> <a href="../index.html"> Inicio </a></li>
+                                <li> <a href="sobreMi.html"> Sobre Mi </a></li>
+                                <li> <a href="areasDePractica.html"> Areas de practica </a></li>
+                                <li> <a href="novedades.html"> Novedades </a></li>
+                                <li> <a href="contacto.html"> Contacto </a></li>
+                            </ul>
+                    </nav>
+                    
+                    <!-- FIN MENU NAVEGABLE-->
+                
+                    <!--ICONOS REDES SOCIALES -->
+                    <aside class="redesHeader">
+                        <a href="https://www.linkedin.com/in/estefan%C3%ADa-a-santarelli-a4bb43175/" target="_blank"> <img class=iconosRRSS src="/Imagenes/2.jpg" alt="Icono de Linkedin"> </a>
+                    
+                        <a href="https://www.twitter.com" target="_blank"><img src="/Imagenes/3.jpg" alt="Icono de Twitter"></a>
+                    </aside>
+                    <!-- FIN ICONOS REDES SOCIALES -->
+
+                </div>
+            </div>
+        </header>
+
+        <section class="novedades">
+
+            <div class="container">
+                <!--Aca van las ultimas novedades legales con la opinion de la doctora.-->
+                <!--LISTA ORDENADA-->
+                <h2>
+                    Ultimas Novedades</h2>
+                <p>
+                    Estas son las ultimas noticias sobre derecho laboral y legal en Argentina, donde incluyo mi mirada sobre los
+                    hechos.</br>
+                </p>
+
+
+                <div class="novedades-container">
+                <art>   
+                    <h3> Octubre </h3>
+                    <ol>
+                        <li>Semana</li>
+                        <li>Semana</li>
+                        <li>Semana</li>
+                        <li>Semana</li>
+                    </ol>
+                </art> 
+
+                <art>
+                    <h3> Septiembre </h3>
+                    <ol>
+                        <li>Semana</li>
+                        <li>Semana</li>
+                        <li>Semana</li>
+                        <li>Semana</li>
+                    </ol>
+                </art> 
+
+                <art>
+                    <h3> Agosto </h3>
+                    <ol>
+                        <li>Semana</li>
+                        <li>Semana</li>
+                        <li>Semana</li>
+                        <li>Semana</li>
+                    </ol>
+                </art>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footerContainer">
+                            <div class="footerContainer-newsletter">
+                                <h3> Subscribite al newsletter </h3>
+                                <!--ACA LO PODEMOS DEJAR VACIO O PONER UNA BARRA. ACA HACEMOS REFERENCIA A NUESTRO ARCHIVO BACK END,
+                                    EN ESTE CASO TODAVIA NO LO TENEMOS. LO DEJAMOS CON UNA "/"-->
+                                <form action="/" method="post">
+
+                                    <label for="correo"> Ingresa tu correo para formar parte de las ultimas novedades: </label>
+                                    <input id="email" name="email" type="email"  placeholder="Ingrese su e-mail">
+
+                                    <input class="btnFooter" type="submit" value="Enviar">
+                                </form>   
+                            </div>
+                            
+                            <div class="footerContainer-iframe"> 
+                                <p>📍Diego Palma 123, San Isidro.
+                                ¿Cómo llegar a mi estudio? 👇</p>
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.240991772578!2d-58.52025278408584!3d-34.47141025801803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb030cfdb2ccf%3A0xe77661479341725!2sFJC%2C%20Diego%20Palma%20123%2C%20B1642%20San%20Isidro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1636596404340!5m2!1ses-419!2sar" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy">
+                                </iframe>
+                            </div>
+            </div>
+
+
+            <div class="footerEnd"> 
+                <p class="firma"> Estefania A. Santarelli </p>
+                <p> ✉️ info@estefisantarelli.com </p>
+            </div> 
+
+            <div>    
+                <p class="copyright"> 2021 © Todos los derechos reservado</p>
+            </div>
+
+        </footer>
+
+
+</body>
+
+</html>
