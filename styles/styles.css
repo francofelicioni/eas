@@ -391,37 +391,28 @@ p {
 /* PAGE: AREAS DE PRACTICA ** PAGE: AREAS DE PRACTICA ** PAGE: AREAS DE PRACTICA ** PAGE: AREAS DE PRACTICA ** PAGE: AREAS DE PRACTICA ** PAGE: AREAS DE PRACTICA ** PAGE: AREAS DE PRACTICA */
 
 .areas{
-    padding: 200px 0 100px 50px;
     font-size: 2.2rem;
     list-style: none;
+    padding-top: 150px;
 }
 
-.areas h2 {
-        padding: 0px 200px 0 0;
-        text-align: center;
-        font-size:3.5rem;
-        padding: 20px;
-        
-    }
+    .areas h1 {
+
+            text-align: center;
+            font-size:3rem;
+            padding: 30px;
+            
+            
+        }
 
     .areasDePractica p {
+        width: 100%;
+        font-size: 1.6rem;
+        padding: 20px;
 
-       padding: 20px 200px;
-        margin: 10px;
-        font-size: 1.8rem;
-        line-height: 1em;
-        text-align: center;
-        
-    } 
+    }
        
-    
 
-
-
-    
-
-
-    
 
 /* PAGE: NOVEDADES ** PAGE: NOVEDADES ** PAGE: NOVEDADES ** PAGE: NOVEDADES ** PAGE: NOVEDADES ** PAGE: NOVEDADES ** PAGE: NOVEDADES ** PAGE: NOVEDADES ** PAGE: NOVEDADES ** PAGE: NOVEDADES */
 
@@ -462,17 +453,20 @@ p {
 
 .contacto {
     padding: 175px 0px 100px 0px;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: black;
 }
+
+
 
     .contacto h2 {
         padding: 20px;
         text-align: center;
         font-size:1.8rem;
         font-weight: bold;
-        line-height: 2em;
+        line-height: 1em;
     }
+
 
 .formContainer{
     text-align: left;
@@ -480,6 +474,10 @@ p {
     padding-top: 25px;
     padding:1em;
 
+}
+
+.formContainer label {
+    font-size: 1.4rem;
 }
 
 
@@ -681,6 +679,17 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
             text-align: center;
         }
 
+
+    .areas h1 {
+        padding: 30px 0 ;
+
+    }
+
+    .areas p{
+
+        font-size: 1.6rem;
+    }
+
     .novedades-container {
         display: flex;
         flex-direction: column;
@@ -726,17 +735,6 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
 
     }
     
-
-    .areasDePractica p {
-
-        padding: 20px 50px;
-         margin: 10px;
-         font-size: 1.2rem;
-         line-height: 0.8em;
-         text-align: center;
-         
-     } 
-
     .novedades-container{
         display: flex;
         align-content: space-around;
@@ -756,9 +754,6 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
         font-size:1.2rem;
        
     }
-
-
-
 
 
 @media screen and (max-width: 480px) {
@@ -807,12 +802,22 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
             
         }
 
+    
+
+
+
     .areas {
-        font-size: 1.6rem;
+        width: 100%;
+
     }
 
-    .areas h2 {
-        font-size: 2rem;
+    .areas h1 {
+        font-size: 2.4rem;
+
+    }
+
+    .areas p {
+        font-size: 1.2rem;
 
     }
 
@@ -827,9 +832,6 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
         font-size: 1.3rem;
 
     }
-
-
-
 
 /*     * FOOTER FOOTER FOOTER FOOTER */
 
@@ -855,20 +857,7 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
     }
 
 
-    .contacto {
-        
-        font-size: 1.2rem;
-        color: black;
-    }
     
-        .contacto h2 {
-            padding: 20px;
-            text-align: center;
-            font-size:1.4rem;
-            font-weight: bold;
-            line-height: 1em;
-        }
-
     
         .btn2 {
     
@@ -958,14 +947,19 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
                     
         }
 
-        .areas {
-            font-size: 1.4rem;
+        
+        
+       /*  .areas h1 {
+            font-size: 2.2rem;
+            padding: 30px 0;
+    
         }
-
-        .areas h2 {
-            font-size: 1.8rem;
-
-        }
+    
+        .areas p {
+            font-size: 1rem;
+    
+        } */
+    
 
         .btnFooter {
     
