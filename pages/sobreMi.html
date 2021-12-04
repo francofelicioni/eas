@@ -4,15 +4,20 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shorcut icon" href="../imagenes/favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shorcut icon" href="./imagenes/favicon.png">
         <title>ES Site</title>
         <!-- GOOGLE FONT: ROBOTO -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="link rel="preconnect="href=https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link 
+            href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" 
+            rel="stylesheet">
+        <!-- CCS BOOTSTRAP -->
+        <link 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <!-- MI CCS --> 
         <link rel="stylesheet" href="../styles/styles.css">
     </head>
@@ -76,36 +81,79 @@
                         <p> Hacia el año 2021, tomé la decisión de emprender un nuevo proyecto al establecer mi propio estudio. La amplia experiencia obtenida en el ámbito académico y laboral, fueron factores determinantes al iniciar este nuevo desafío. </p>
 
                     </section>
+
                     
-                    <section class="sobremi-containerTabla">
+                    <!-- <section class="sobremi-containerTabla"> -->
                         <!--TABLA-->
-                        <table border="1" cellpadding="5" cellspacing="2" n n>
-                            <tr>
+                        <!-- <table border="1" cellpadding="5" cellspacing="2"> -->
+                            <!-- <tr> -->
                                 <!--Inicio de la fila 1-->
-                                <th>Mis estudios</th>
+                                <!-- <th>Mis estudios</th>
                                 <th>Experiencia laboral</th>
                                 <th>Asesoramientos a ONG</th>
-                            </tr>
+                            </tr> -->
 
-                            <tr>
+                            <!-- <tr> -->
                                 <!--Inicio de la fila 2-->
-                                <td><a href="http://www.derecho.uba.ar/"> UBA Derecho (2012-2018)</a></td>
+                                <!-- <td><a href="http://www.derecho.uba.ar/"> UBA Derecho (2012-2018)</a></td>
                                 <td>JPMorgan Chase & Co / Marval O'Farrell, Mairal / Estudio Juridico Perez </td>
                                 <td>Aldeas infantiles / Fundación ArteBA / Caritas</td>
-                            </tr>
-                        </table>
+                            </tr> -->
+                        <!-- </table> -->
 
-                    </section>
-                
-                        
+                    </section>  
                 </div>   
             </div>
         </section>
 
+        <div class="carrousel-container">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/carrousel/1.jpg" class="d-block w-100" alt="Imagen de Estefania recibiendo su titulo">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Con mi título en mano</h5>
+                        </div>
+                    </div>            
+                    <div class="carousel-item">
+                        <img src="../images/carrousel/2.png" class="d-block w-100" alt="Imagen de Estefania recibiendo su titulo">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>El dia de la entrega de diplomas</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/carrousel/3.png" class="d-block w-100" alt="Imagen de Estefania recibiendo su titulo">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Como abanderada, el dia de la jura</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/carrousel/4.png" class="d-block w-100" alt="Imagen de Estefania recibiendo su titulo">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Recibiendo mi título</h5>
+                        </div>
+                    </div>
+            
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+         </div>
 
-    
 
-    <div class="container">
+    <!-- <div class="container">
       <div class="gridContainer">
             <div class="gridItem">
                 <img src="../images/grid/22.jpeg" alt="Imagen Estefi" class="gridImg">
@@ -135,7 +183,7 @@
                 <h2 class="gridTitle"> Con mis compañeras de trabajo</h2>
             </div>
         </div>
-    </div>    
+    </div>     -->
 
 
 
@@ -175,8 +223,7 @@
 
     </footer>
 
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 

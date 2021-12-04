@@ -114,8 +114,8 @@ p {
     /* LOGO - HEADER*/
 
     .logo {
-        width: 120px;
-        padding: 10px 0 0 0;
+        width: 100px;
+        padding: 5px;
         
     }
 
@@ -123,10 +123,28 @@ p {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        
-        
     }
+
+    .navbar {
+        background: rgb(49, 76, 136);
+       
+    }
+
+    .dropdown-menu {
+        background: rgb(49, 76, 136);
+
+    }
+
+    .nav-item a {
     
+        color:white;
+
+    }
+
+
+    .navbar-light .navbar-nav .nav-link {
+        color:white;
+    }
 
     /* MENU NAVEGABLE - HEADER*/
 
@@ -160,7 +178,7 @@ p {
         display: none;
     }
 
-    /* REDES SOCIALES LINKS - HEADER */
+    /* REDES SOCIALES S - HEADER */
 
     .redesHeader a img {
         border-radius: 105px;
@@ -251,21 +269,22 @@ p {
             
         .copyright {
                 margin: 10px 0 0 0;
-                border-top: solid 2px black;
+                border-top: solid 1px black;
             }
         
    
 /* INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX */
 
 .main {
-    padding: 200px 0 0 0;
-    width: 100%;
-    height: 100%;
+    padding: 150px 0 50px 0px;
+  /*   width: 100%; */
+  /*   height: 100%; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image:url("../images/hero.jpg");
-    opacity: 0.8;
+    background-image:url("../images/hero.png");
+    background-attachment: fixed;
+    opacity: 0.9;
     
 
 }
@@ -282,9 +301,11 @@ p {
 
     .main p {
         
-        padding: 0 0px 50px 0;
+        padding: 25px;
         font-size: 2rem;
+        line-height: 1em;
         color:white;
+        font-weight: 400;
         
     }
 
@@ -307,7 +328,21 @@ p {
     align-content: space-around;
     align-items: center;
     justify-items: center;
+
 } 
+
+
+.carrousel-container {
+
+    width: 85%;
+    height: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+
+    padding: 30px;
+
+
+}
 
 .sobremi-container p {
 
@@ -339,6 +374,8 @@ p {
         color: black;
         text-align: center;
     }
+
+
 
 
 /* ESTILOS DE LA GALERIA DE IMAGENES */
@@ -393,31 +430,59 @@ p {
 .areas{
     font-size: 2.2rem;
     list-style: none;
-    padding-top: 150px;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    text-align: center;
 }
 
     .areas h1 {
-
+            margin: 10px;
             text-align: center;
             font-size:3rem;
             padding: 30px;
-            
-            
         }
 
     .areasDePractica p {
         width: 100%;
         font-size: 1.6rem;
-        padding: 20px;
+        margin: 20px;
 
     }
+
+
+.item {
+    /* padding: 20px 20px; */
+    font-size: 1.6rem;
+    background-color: #f2f2f2;
+    border: solid 1px black;
+    padding: 10px;
+    
+}
+
+
+.item p {
+    height: 100%;
+    
+}
+
+.item1 h2 {
+    font-size: 2rem;
+    padding: 20px;
+
+}
+
        
 
 
 /* PAGE: NOVEDADES ** PAGE: NOVEDADES ** PAGE: NOVEDADES ** PAGE: NOVEDADES ** PAGE: NOVEDADES ** PAGE: NOVEDADES ** PAGE: NOVEDADES ** PAGE: NOVEDADES ** PAGE: NOVEDADES ** PAGE: NOVEDADES */
 
-.novedades {
+.novedades-container {
     padding: 200px 0 50px 0;
+
+}
+
+.novedades {
+    padding: 150px 0 50px 0;
 }
 
     .novedades p {
@@ -429,10 +494,25 @@ p {
     .novedades h2 {
         padding: 0px;
         text-align: center;
+        font-size:2.4rem;
+        font-weight: bold;
+    }
+
+    .novedades h3 {
+        padding: 0px;
+        text-align: center;
         font-size:2rem;
         font-weight: bold;
+    }
+
+    .novedades li {
+        padding: 20px;
+        text-align: center;
+
        
     }
+
+    
 
 .novedades-container {
     display: flex;
@@ -448,11 +528,18 @@ p {
 
     }
 
+.novedades-container row {
+    padding-top: 200px;
+}
+
+.estilo-noveades h3 {
+    padding-bottom: 20px;
+}
 
 /* PAGE: CONTACTO ** PAGE: CONTACTO ** PAGE: CONTACTO ** PAGE: CONTACTO ** PAGE: CONTACTO ** PAGE: CONTACTO ** PAGE: CONTACTO ** PAGE: CONTACTO ** PAGE: CONTACTO ** PAGE: CONTACTO */
 
 .contacto {
-    padding: 175px 0px 100px 0px;
+    padding: 150px 0px 100px 0px;
     font-size: 1.4rem;
     color: black;
 }
@@ -483,6 +570,22 @@ p {
 
 
 
+@media screen and (max-width: 970px) {
+
+    .main h1 {
+        text-align: center;
+        font-size:2.6rem;
+        font-weight: bold;
+        color: whitesmoke;
+        
+        }
+
+
+    
+    }
+
+
+
 /* 
 MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla sea como máximo 767px */
 
@@ -502,7 +605,6 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
 .logo-nav-redes-conteiner{
     display: flex;
     align-content: space-around;
-
 }
 
     .navLabel {
@@ -512,14 +614,13 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
 
     .navMenu {
         display: none;
-        
     }
 
     .navInput:checked + .navMenu {
         
         background: rgb(34, 41, 75);
         position: fixed;        
-        top:150px;
+        top:120px;
         left:0;
         bottom: 0;
         width: 100%;
@@ -528,11 +629,7 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        
-        
     }
-
-    
 
     .navInput:checked + .navMenu ul li {
         display: flex;
@@ -542,7 +639,6 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
         margin: 10px;
         padding: 5px;
         width: 100%;
-
     }
 
     .navInput:checked + .navMenu ul li a {
@@ -554,18 +650,14 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
         border-radius: 5px;
         }
     
-
     /* .navInput:checked + .navMenu ul li a:hover {
             background-color: rgb(34, 41, 75);
     
         } */
 
-
     .redesHeader{
         display: flex;
         flex-direction: column;
-
-
     }
 
 /* FOOTER FOOTER FOOTER FOOTER */
@@ -594,21 +686,21 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
 /* INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX */
 
 .main {
-    padding: 200px 0 0 0;
+    padding: 120px 0 0 0;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image:url(/imagenes/banner.jpg);
-    opacity: 0.8;
+    /* background-image:url(/images/banner.jpg); */
+    
     
 
 }
 
     .main h1 {
-        padding: 10px 0px 40px;
+        padding: 10px;
         text-align: center;
-        font-size:2.6rem;
+        font-size:2.4rem;
         font-weight: bold;
         color: whitesmoke;
         
@@ -617,8 +709,8 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
     .main p {
         width: 100%;
         padding: 0 0px 50px 0;
-        font-size: 1.8rem;
-        line-height: 0.8em;
+        font-size: 1.6rem;
+        line-height: 1em;
         color:white;
         
     }
@@ -628,6 +720,9 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
 
 
 /* ESTILOS GRID SOBRE MI */
+
+
+
 
     .gridContainer {
         margin-bottom: 400px;
@@ -888,12 +983,12 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
     
         .main p {
             width: 100%;
-            padding: 0;
-            margin: 0;
+            padding: 20px;
             font-size: 1.2rem;
-            line-height: 0.8em;
+            line-height: 1em;
             color:white;
             text-align: center;
+            width: 100%;
             
         }
 
