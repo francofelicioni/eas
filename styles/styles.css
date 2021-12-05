@@ -1151,7 +1151,9 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
             font-size: 1rem;
             transition: all 0.3s linear;
             border-radius: 5px;
+            
         }
+
 
         .novedades p {
             color: black;
