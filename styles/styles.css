@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 
     /* Con border-box, los valores en porcentaje tienen en cuenta el margin y padding para hacer el calculo. 
     Sino, calculan el ancho total MAS estas dos propiedades genreando contenedores mas anchos de los que queremos. */
@@ -351,18 +352,19 @@ p {
     height: 100%;
     max-width: 850px;
     margin: 0 auto;
-
     padding: 30px;
-
-
 }
+
+    .carrousel-container h2 {
+        padding:1em;
+    }
 
 .sobremi-container p {
 
     padding-top: 40px;
     margin: 10px;
-    font-size: 1.6rem;
-    line-height: 1.4em;
+    font-size: 1.4rem;
+    line-height: 1.2em;
     text-align: center;
     
 } 
@@ -440,15 +442,23 @@ p {
 
 /* PAGE: AREAS DE PRACTICA ** PAGE: AREAS DE PRACTICA ** PAGE: AREAS DE PRACTICA ** PAGE: AREAS DE PRACTICA ** PAGE: AREAS DE PRACTICA ** PAGE: AREAS DE PRACTICA ** PAGE: AREAS DE PRACTICA */
 
+
 .areas{
     font-size: 2.2rem;
-    list-style: none;
-    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    min-height: 100vh;
+    /* background-color: #222; */
+    /* list-style: none; */
+    padding-top: 120px;
     padding-bottom: 50px;
-    text-align: center;
+    /* text-align: center; */
+    box-sizing: border-box;
+    
 }
 
-    .areas h1 {
+    /* .areas h1 {
             margin: 10px;
             text-align: center;
             font-size:3rem;
@@ -461,19 +471,93 @@ p {
         margin: 20px;
 
     }
+ */
+.areas-container {
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: minmax(100px,auto);
+    margin: 40px;
+    grid-auto-flow: dense;
+    grid-gap:10px;
+    
 
+}
 
-.item {
-    /* padding: 20px 20px; */
-    font-size: 1.6rem;
-    background-color: #f2f2f2;
-    border: solid 1px black;
-    padding: 10px;
+.areas-container .box {
+    background-color: #333;
+    padding: 20px;
+    display: grid;
+    font-size: 1.4rem;
+    place-items: center;
+    text-align: center;
+    color:#fff;
+    transition: 0.5s;
+}
+
+.areas-container .box p {
+   
+    color:#fff;
+    padding: 20px 0;
     
 }
 
 
-.item p {
+.areas-container .box:hover {
+    background: #e91e63;
+}
+
+.areas-container .box img {
+    position:relative;
+    max-width: 100px;
+    padding: 10px 0 20px 0;
+}
+
+.areas-container .box:nth-child(1) {
+
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.areas-container .box:nth-child(2) {
+
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.areas-container .box:nth-child(3) {
+
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.areas-container .box:nth-child(4) {
+
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.areas-container .box:nth-child(5) {
+
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.areas-container .box:nth-child(6) {
+
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+/* .item {
+    /* padding: 20px 20px; */
+    /* font-size: 1.6rem;
+    background-color: #f2f2f2;
+    border: solid 1px black;
+    padding: 10px;
+    }
+     */
+ 
+
+
+/* .item p {
     height: 100%;
     
 }
@@ -482,32 +566,32 @@ p {
     font-size: 2rem;
     padding: 20px;
 
-}
+} */
 
        
 
 
 /* PAGE: NOVEDADES ** PAGE: NOVEDADES ** PAGE: NOVEDADES ** PAGE: NOVEDADES ** PAGE: NOVEDADES ** PAGE: NOVEDADES ** PAGE: NOVEDADES ** PAGE: NOVEDADES ** PAGE: NOVEDADES ** PAGE: NOVEDADES */
 
+
+
 .novedades-container {
-    padding: 200px 0 50px 0;
-
+    padding: 170px 0 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
-
-.novedades {
-    padding: 150px 0 50px 0;
-}
-
     .novedades p {
         color: black;
-        font-size: 1.8rem;
+        font-size: 1rem;
         padding: 20px;
     }
 
     .novedades h2 {
         padding: 0px;
         text-align: center;
-        font-size:2.4rem;
+        font-size:1.2rem;
         font-weight: bold;
     }
 
@@ -518,7 +602,88 @@ p {
         font-weight: bold;
     }
 
-    .novedades li {
+        
+
+    /* ACA PONGO TODO LO DE CARDS */
+
+    
+
+    .card {
+        width: 300px;
+        height: 500px;
+        margin:10px;
+        border: 1px solid rgba(0, 0, 0, 0.103);
+        border-radius: 15px;
+        object-fit: contain;
+    } 
+
+    .card:hover {
+        background-color:gray;
+        cursor: pointer;
+        transform: scale(1.03);
+        transition: all 1s ease;
+        text-decoration: none;
+    }
+
+    .card:hover h2 {
+        transition: all 1s ease;
+        text-decoration: none;
+        color:white
+    }
+
+    .card:hover p {
+        
+        transition: all 1s ease;
+        text-decoration: none;
+        color:white
+    }
+
+    .card-image {
+        background-color: aqua;
+        height: 120px;
+        margin-bottom: 15px;
+        border-radius: 15px 15px 0 0;
+    }
+
+   
+    .card-1 {
+        background-image: url(../images/cards-img/1.jpg);
+
+    }
+    .card-2 {
+        background-image: url(../images/cards-img/2.jpg);
+
+    }
+    .card-3 {
+        background-image: url(../images/cards-img/3.jpg);
+
+    }
+    .card-4 {
+        background-image: url(../images/cards-img/4.jpg);
+
+    }
+    .card-5 {
+        background-image: url(../images/cards-img/5.jpg);
+
+    }
+    .card-6 {
+        background-image: url(../images/cards-img/6.jpg);
+
+    }
+    .card-7 {
+        background-image: url(../images/cards-img/7.jpg);
+
+    }
+    .card-8 {
+        background-image: url(../images/cards-img/8.jpg);
+
+    }
+    .card-9 {
+        background-image: url(../images/cards-img/9.jpg);
+
+    }
+
+    /* .novedades li {
         padding: 20px;
         text-align: center;
     }
@@ -543,7 +708,7 @@ p {
 
 .estilo-noveades h3 {
     padding-bottom: 20px;
-}
+} */
 
 /* PAGE: CONTACTO ** PAGE: CONTACTO ** PAGE: CONTACTO ** PAGE: CONTACTO ** PAGE: CONTACTO ** PAGE: CONTACTO ** PAGE: CONTACTO ** PAGE: CONTACTO ** PAGE: CONTACTO ** PAGE: CONTACTO */
 
@@ -678,9 +843,6 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
 
             }
 
-
-
-
 /* INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX */
 
 .main {
@@ -713,15 +875,7 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
         
     }
 
-    
-
-
-
 /* ESTILOS GRID SOBRE MI */
-
-
-
-
     .gridContainer {
         margin-bottom: 400px;
         
@@ -744,7 +898,7 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
     }
 
 
-    .novedades p {
+   /*  .novedades p {
         color: black;
         font-size: 1.4rem;
         padding: 20px;
@@ -767,10 +921,9 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
     .item {
         font-size: 1.4rem;
 
-    }
+    } */
         
 }
-
 
 @media screen and (max-width: 680px) {
 
@@ -805,7 +958,7 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
         }
 
 
-    .areas h1 {
+    /* .areas h1 {
         padding: 30px 0 ;
 
     }
@@ -813,9 +966,9 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
     .areas p{
 
         font-size: 1.6rem;
-    }
+    } */
 
-    .novedades-container {
+   /*  .novedades-container {
         display: flex;
         flex-direction: column;
         align-content: space-around;
@@ -829,7 +982,7 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
         padding: 20px;
 
     }    
-    
+     */
     
     .footerContainer {
         width: 100%;
@@ -860,7 +1013,7 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
 
     }
     
-    .novedades-container{
+   /*  .novedades-container{
         display: flex;
         align-content: space-around;
         margin:10px;
@@ -871,7 +1024,7 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
         width: 100%;
         padding: 10px;
 
-    }
+    } */
 
 
     .contacto p {
@@ -879,6 +1032,48 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
         font-size:1.2rem;
        
     }
+
+
+
+@media screen and (max-width: 500px) {
+
+    
+    
+    .areas-container .box:nth-child(1) {
+    
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    .areas-container .box:nth-child(2) {
+    
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .areas-container .box:nth-child(3) {
+    
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .areas-container .box:nth-child(4) {
+    
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .areas-container .box:nth-child(5) {
+    
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .areas-container .box:nth-child(6) {
+    
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+
+
+}    
 
 
 @media screen and (max-width: 480px) {
@@ -927,7 +1122,7 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
             
         }
 
-    .areas {
+    /* .areas {
         width: 90%;
 
     }
@@ -940,9 +1135,9 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
     .areas p {
         font-size: 1.2rem;
 
-    }
+    } */
 
-    .novedades p {
+    /* .novedades p {
      font-size: 1.3rem;
 
     }
@@ -977,9 +1172,9 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
     .item {
         font-size: 1.4rem;
 
-    }
+    } */
 
-/*     * FOOTER FOOTER FOOTER FOOTER */
+    /* FOOTER FOOTER FOOTER FOOTER */
 
     .footerContainer-newsletter{
          width: 90%;
@@ -1098,7 +1293,7 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
         }
 
         
-        .areas h1 {
+       /*  .areas h1 {
             font-size: 2.2rem;
             padding: 30px 0;
     
@@ -1107,7 +1302,7 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
         .areas p {
             font-size: 1rem;
     
-        }
+        } */
     
 
         .btnFooter {
@@ -1154,8 +1349,7 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
             
         }
 
-
-        .novedades p {
+         /* .novedades p {
             color: black;
             font-size: 1rem;
             padding: 15px 0;
@@ -1178,22 +1372,63 @@ MEDIA QUERIES: Estos estilos aplicarán solo cuando el tamaño de la pantalla se
         .item {
             font-size: 1rem;
             padding: 0;
-            
-    
         }
 
         .item li {
-
             padding: 10px 0;
         }
 
         .contacto h2 {
             font-size:1.4rem;
             padding:5px 0;
-
+        } 
+        */
+    
         }
 
 
-        }
 
+        @media screen and (max-width: 300px) {
+
+
+            .areas-container {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                grid-template-rows: minmax(100px,auto);
+                margin: 20px;
+                grid-gap:5px;
+                
+            
+            }
+            
+            .areas-container .box {
+                
+                padding: 10px;
+                
+                font-size: 0.8rem;
+                
+            }
+
+            .areas-container .box h2 {
+               
+                
+                font-size:1.2rem;
+                
+            }
+            
+            .areas-container .box p {
+               
+                
+                padding: 10px 0;
+                
+            }
+
+
+            .areas-container .box img {
+                position:relative;
+                max-width:60px;
+                padding: 5px 0 10px 0;
+            }
+            
+
+        }
 
