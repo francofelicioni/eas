@@ -1,0 +1,89 @@
+.header {
+    background-color: rgb(49, 76, 136);
+    position:fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.header a{
+    color:white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 2em; 
+    
+}
+
+/* LOGO - HEADER*/
+
+.logo {
+    width: 100px;
+    padding: 5px;
+    
+}
+
+.logo-nav-redes-conteiner {
+    @include flex-spacearound-center;
+   /*  display: flex;
+    justify-content: space-around;
+    align-items: center; */
+}
+
+.navbar {
+    background: rgb(49, 76, 136);
+   
+}
+
+.dropdown-menu {
+    background: rgb(49, 76, 136);
+
+}
+
+.nav-item a {
+
+    color:white;
+
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color:white;
+}
+
+/* MENU NAVEGABLE - HEADER*/
+
+
+.navMenu ul {
+    @include ul-reset;
+    /* list-style: none;
+    margin:0;
+    padding: 0; */
+}
+
+.navMenu ul li{
+    display: inline-block;
+    padding: 0px;
+    font-size: 1.8rem;
+}
+
+.navMenu ul li a {
+    display: block;
+    background-color: rgb(106, 148, 204);
+    padding: 0px 10px;
+    transition: all 0.2s linear;
+    border-radius: 5px;
+}
+
+.navMenu ul li a:hover {
+    background-color: rgb(34, 41, 75);
+
+}
+
+.navLabel, .navInput {
+    display: none;
+}
+
+/* REDES SOCIALES S - HEADER */
+
+.redesHeader a img {
+    border-radius: 105px;
+}

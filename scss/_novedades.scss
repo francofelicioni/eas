@@ -1,0 +1,106 @@
+.novedades-container {
+    padding: 170px 0 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+    .novedades-container p {
+        color: black;
+        font-size: 1rem;
+        padding: 20px;
+    }
+
+    .novedades-container h2 {
+        padding: 0px;
+        text-align: center;
+        font-size:1.2rem;
+        font-weight: bold;
+    }
+
+    .novedades-container h3 {
+        padding: 0px;
+        text-align: center;
+        font-size:2rem;
+        font-weight: bold;
+    }
+
+        
+
+    /* ACA PONGO TODO LO DE CARDS */
+
+    .card {
+        @include card(500px,300px);
+        /* width: 300px;
+        height: 500px; */
+        margin:10px;
+        border: 1px solid rgba(0, 0, 0, 0.103);
+        border-radius: 15px;
+        object-fit: contain;
+    } 
+
+    .card:hover {
+        background-color:gray;
+        cursor: pointer;
+        transform: scale(1.03);
+        @include transition;
+        text-decoration: none;
+    }
+
+    .card:hover h2 {
+        @include transition;
+        text-decoration: none;
+        color:white
+    }
+
+    .card:hover p {
+        
+        transition: all 1s ease;
+        text-decoration: none;
+        color:white
+    }
+
+    .card-image {
+        background-color: aqua;
+        height: 120px;
+        margin-bottom: 15px;
+        border-radius: 15px 15px 0 0;
+    }
+
+   
+    .card-1 {
+        background-image: url(../images/cards-img/1.jpg);
+
+    }
+    .card-2 {
+        background-image: url(../images/cards-img/2.jpg);
+
+    }
+    .card-3 {
+        background-image: url(../images/cards-img/3.jpg);
+
+    }
+    .card-4 {
+        background-image: url(../images/cards-img/4.jpg);
+
+    }
+    .card-5 {
+        background-image: url(../images/cards-img/5.jpg);
+
+    }
+    .card-6 {
+        background-image: url(../images/cards-img/6.jpg);
+
+    }
+    .card-7 {
+        background-image: url(../images/cards-img/7.jpg);
+
+    }
+    .card-8 {
+        background-image: url(../images/cards-img/8.jpg);
+
+    }
+    .card-9 {
+        background-image: url(../images/cards-img/9.jpg);
+
+    }

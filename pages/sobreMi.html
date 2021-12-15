@@ -5,8 +5,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shorcut icon" href="./imagenes/favicon.png">
-        <title>ES Site</title>
+        <link rel="shorcut icon" href="../imagenes/favicon.png">
+        <title>Estefania Santarelli |Sobre mi</title>
+        <meta name="description=" content="Esta es mi informacion acádemica junto con mi experiencia laboral">
+        <meta name="keywords" content="Sobre Estefania Santarelli, Informacion académica, Experiencia laboral">
         <!-- GOOGLE FONT: ROBOTO -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +27,7 @@
         <link 
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <!-- MI CCS --> 
-        <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="stylesheet" href="../css/styles.css">
     </head>
 
     <body>
@@ -61,9 +63,8 @@
                 
                     <!--ICONOS REDES SOCIALES -->
                     <aside class="redesHeader">
-                        <a href="https://www.linkedin.com/in/estefan%C3%ADa-a-santarelli-a4bb43175/" target="_blank"> <img class=iconosRRSS src="../images/2.jpg" alt="Icono de Linkedin"> </a>
-                    
-                        <a href="https://www.twitter.com" target="_blank"><img src="../images/3.jpg" alt="Icono de Twitter"></a>
+                        <a href="https://www.linkedin.com/in/estefan%C3%ADa-a-santarelli-a4bb43175/"  rel="noopener"> <img class=iconosRRSS src="../images/2.png"  alt="Icono de Linkedin"> </a>
+                        <a href="https://www.twitter.com" rel="noopener"><img src="../images/1.png" alt="Icono de Twitter"></a>
                     </aside>
                     <!-- FIN ICONOS REDES SOCIALES -->
 
@@ -198,23 +199,14 @@
         <div class="footerContainer">
             <div class="footerContainer-newsletter">
                 <h3> Subscribite al newsletter </h3>
+                <p>Novedades sobre el derecho directo a tu bandeja</p>
                 <!--ACA LO PODEMOS DEJAR VACIO O PONER UNA BARRA. ACA HACEMOS REFERENCIA A NUESTRO ARCHIVO BACK END,
                     EN ESTE CASO TODAVIA NO LO TENEMOS. LO DEJAMOS CON UNA "/"-->
                 <form action="/" method="post">
-
-                    <label for="correo"> Ingresa tu correo para formar parte de las ultimas novedades: </label>
+                    <label for="correo">Podrás darte de baja cuando quieras: </label>
                     <input id="email" name="email" type="email"  placeholder="Ingrese su e-mail">
-
                     <input class="btnFooter" type="submit" value="Enviar">
                 </form>   
-            </div>
-            
-            <div class="footerContainer-iframe"> 
-                <p>📍Diego Palma 123, San Isidro.
-                ¿Cómo llegar a mi estudio? 👇</p>
-
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.240991772578!2d-58.52025278408584!3d-34.47141025801803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb030cfdb2ccf%3A0xe77661479341725!2sFJC%2C%20Diego%20Palma%20123%2C%20B1642%20San%20Isidro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1636596404340!5m2!1ses-419!2sar" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
             </div>
         </div>
 
@@ -225,7 +217,7 @@
         </div> 
 
         <div>    
-            <p class="copyright"> 2021 © Todos los derechos reservado</p>
+            <p class="copyright"> 2021 © Todos los derechos reservados</p>
         </div>
 
     </footer>

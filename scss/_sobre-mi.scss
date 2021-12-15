@@ -1,0 +1,88 @@
+.sobreMi{
+    padding: 200px 0 0 0;
+}
+
+.sobremi-container {
+   @include flex-spacearound-center;
+    flex-direction: column;
+    justify-items: center;
+} 
+
+
+.carrousel-container {  
+    @include container;
+    height: 100%;
+    padding: 30px;
+    }
+
+    .carrousel-container h2 {
+        padding:1em;
+    }
+
+.sobremi-container p {
+    padding-top: 40px;
+    margin: 10px;
+    font-size: 1.4rem;
+    line-height: 1.2em;
+    text-align: center;
+    
+} 
+
+.sobremi-containerImg  {
+    width: 60%; 
+    border-radius: 180px;
+}
+
+.sobremi-containerTabla  {
+    width: 90%;    
+    text-align: center;
+    font-size: 1.6rem;
+    line-height:1.2em ;
+    padding: 30px;
+}
+
+    .sobremi-containerTabla p {
+        color: black;
+        text-align: center;
+    }
+
+
+/* ESTILOS DE LA GALERIA DE IMAGENES */
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 33%;
+    padding: 40px;
+    grid-gap: 10px;
+}
+
+.gridItem {
+    position: relative;
+}
+
+
+.gridItem:nth-child(2) {
+    grid-row-start: span 2 ;
+}
+
+.gridItem:nth-child(6) {
+    grid-column-end: span 3 ;
+}
+
+.gridImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gridTitle {
+    position: absolute;
+    bottom:0;
+    color: white;
+    background: rgb(20,38,78);
+    background: linear-gradient(180deg, rgba(20,38,78,1) 0%, rgba(49,76,136,1) 100%);   
+    width: 100%;
+    margin: 0;
+    padding: 2px;
+}

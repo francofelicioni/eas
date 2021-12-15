@@ -1,0 +1,33 @@
+.main {
+    padding: 150px 0 50px 0px;
+  /*   width: 100%; */
+  /*   height: 100%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image:url("../images/hero-optimized.jpg");
+    background-attachment: fixed;
+    opacity: 0.9;
+    
+
+}
+
+    .main h1 {
+        padding: 0px;
+        text-align: center;
+        font-size:3.6rem;
+        line-height: 2em;
+        font-weight: bold;
+        color: whitesmoke;
+        
+        }
+
+    .main p {
+        
+        padding: 25px;
+        font-size: 2rem;
+        line-height: 1em;
+        color:white;
+        font-weight: 400;
+        
+    }
