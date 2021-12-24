@@ -130,7 +130,7 @@ p {
 
 .main h1 {
   text-align: center;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   font-weight: bold;
   color: whitesmoke;
   padding: 10px 0 20px 0; }
@@ -512,7 +512,7 @@ p {
         width: 0px;
         transition: 0.6s; }
     .footer-container .newsletter .email-box:hover > .t-box, .footer-container .newsletter .tbox:focus {
-      width: 260px;
+      width: 225px;
       padding: 0 10px; }
     .footer-container .newsletter .btn-f {
       background: #2f3542;
@@ -559,7 +559,7 @@ p {
       width: 60px;
       height: 60px;
       text-align: center;
-      line-height: 60px !important;
+      line-height: 60px;
       border-radius: 50%;
       transition: 0.3s linear; }
     .footer-container .contact-info .card:hover .card-icon {
@@ -572,16 +572,11 @@ p {
   background-color: #314c88;
   color: white; }
 
-@media screen and (max-width: 870px) {
-  .main h1 {
-    font-size: 2.8rem; }
-  .main p {
-    padding: 1rem 2.5rem; } }
-
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 830px) {
   .logo-nav-redes-conteiner {
     display: flex;
-    align-content: space-between; }
+    justify-content: space-around;
+    align-items: center; }
   .navLabel {
     display: block;
     cursor: pointer; }
@@ -633,10 +628,18 @@ p {
     padding: 120px 0 0 0; }
   .main h1 {
     font-size: 2.6rem;
-    padding: 20px 0 40px 0; }
+    padding-top: 20px; }
   .main p {
-    font-size: 1.3rem;
-    padding: 10px 0 10px 0; }
+    padding: 1rem 2.5rem; }
+  /* .main h1 {
+        font-size:2.6rem;
+        padding: 20px 0 40px 0;
+        }
+
+    .main p {
+        font-size: 1.3rem;
+        padding:10px 0 10px 0;
+    } */
   .main p:last-child {
     padding-bottom: 50px; }
   /* ESTILOS GRID SOBRE MI */
@@ -654,26 +657,28 @@ p {
   .container, .footerContainer {
     width: 90%; }
   .main h1 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     padding-bottom: 40px; }
   .main p {
     font-size: 1.2rem;
-    padding-bottom: 20px; }
-  .gridContainer {
-    margin-bottom: 350px; }
-  .sobremi-container h1 {
-    font-size: 2.8rem; }
-  .sobremi-container p {
-    font-size: 1.2rem; }
-  .sobremi-containerTabla p {
-    color: black;
-    text-align: center; }
-  .footerContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    justify-items: center; } }
+    padding-bottom: 20px;
+    padding: 1rem 1.5rem; } }
+
+.gridContainer {
+  margin-bottom: 350px; }
+
+.sobremi-container h1 {
+  font-size: 2.8rem; }
+
+.sobremi-container p {
+  font-size: 1.2rem; }
+
+.footerContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-items: center; }
 
 .contacto p {
   font-size: 1.2rem; }
@@ -712,90 +717,113 @@ p {
   .redesHeader img {
     width: 30px;
     height: 30px; }
-  .footer-container .newsletter h3 {
-    font-size: 1.4rem; }
-  .footer-container .newsletter p {
-    font-size: 1rem; }
-  .footer-container .contact-info .card {
-    height: 120px; }
-  .footer-container .contact-info .card {
-    padding: 0; }
-  .footer-container .contact-info .card p {
-    font-size: 0.9rem; }
-  .footer-container .contact-info .card .card-icon {
-    font-size: 20px;
-    background: #f2f2f2;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    line-height: 60px !important;
-    border-radius: 50%;
-    transition: 0.3s linear; }
-    .footer-container .contact-info .card .card-icon .card-icon i {
-      width: 30px;
-      height: 30px; }
-  .main h1 {
-    font-size: 2.2rem;
-    padding: 10px 0px 40px;
-    text-align: center; }
-  .main p {
-    width: 100%;
-    font-size: 1rem; }
-  .sobreMi {
-    padding: 100px 0 0 0; }
-  .sobremi-container img {
-    width: 60%; }
-  .sobremi-texto h1 {
-    font-size: 2.2rem;
-    padding-bottom: 20px;
-    margin: 0; }
-  .sobremi-texto p {
-    font-size: 1rem;
-    padding: 0; }
-  .sobremi-containerTabla {
-    text-align: center;
-    font-size: 1.2rem;
-    line-height: 1em; }
-  .sobremi-containerTabla p {
-    color: black;
-    text-align: center; }
-  .areas {
-    padding-top: 120px; }
-  .areas-container .box h2 {
-    font-size: 1.2rem; }
-  .areas-container .box p {
-    font-size: 1rem; }
-  .areas-container .box img {
-    width: 60px;
-    height: 90px; }
-  .novedades {
-    padding: 120px 0 50px 0; }
-    .novedades h1 {
-      padding-bottom: 20px; }
-  .contacto {
-    padding: 70px 0px 20px 0px; }
-  .form-container .half {
-    flex-direction: column; }
-  .form-container .action {
-    display: flex;
-    flex-direction: column; }
-  .form-container .action input {
-    margin-bottom: 10px;
-    width: 100%; }
-  .form-container .half .item {
-    width: 100%; }
   /* FOOTER FOOTER FOOTER FOOTER */
-  .btn2 {
-    background-color: #6a94cc;
-    border: none;
-    color: white;
-    padding: 3px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1rem; } }
+  .footer-container .newsletter .email-box:hover > .t-box, .tbox:focus {
+    width: 50%;
+    padding: 0 10px; } }
 
-@media screen and (max-width: 480px) and (max-width: 360px) {
+.footer-container .newsletter h3 {
+  font-size: 1.4rem; }
+
+.footer-container .newsletter p {
+  font-size: 1rem; }
+
+.footer-container .contact-info .card {
+  height: 120px; }
+
+.footer-container .contact-info .card {
+  padding: 0; }
+
+.footer-container .contact-info .card p {
+  font-size: 0.9rem; }
+
+.footer-container .contact-info .card .card-icon {
+  font-size: 20px;
+  background: #f2f2f2;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  transition: 0.3s linear; }
+  .footer-container .contact-info .card .card-icon .card-icon i {
+    width: 30px;
+    height: 30px; }
+
+.footer-container .contact-info .card:hover .card-icon {
+  background: none;
+  color: #f2f2f2;
+  transform: scale(1.2); }
+
+.main h1 {
+  font-size: 1.8rem;
+  padding: 10px 0px 10px;
+  text-align: center; }
+
+.main p {
+  width: 100%;
+  font-size: 1rem; }
+
+.sobreMi {
+  padding: 100px 0 0 0; }
+
+.sobremi-container img {
+  width: 60%; }
+
+.sobremi-texto h1 {
+  font-size: 2.2rem;
+  padding-bottom: 20px;
+  margin: 0; }
+
+.sobremi-texto p {
+  font-size: 1rem;
+  padding: 0; }
+
+.sobremi-containerTabla {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1em; }
+
+.sobremi-containerTabla p {
+  color: black;
+  text-align: center; }
+
+.areas {
+  padding-top: 120px; }
+
+.areas-container .box h2 {
+  font-size: 1.2rem; }
+
+.areas-container .box p {
+  font-size: 1rem; }
+
+.areas-container .box img {
+  width: 60px;
+  height: 90px; }
+
+.novedades {
+  padding: 120px 0 50px 0; }
+  .novedades h1 {
+    padding-bottom: 20px; }
+
+.contacto {
+  padding: 70px 0px 20px 0px; }
+
+.form-container .half {
+  flex-direction: column; }
+
+.form-container .action {
+  display: flex;
+  flex-direction: column; }
+
+.form-container .action input {
+  margin-bottom: 10px;
+  width: 100%; }
+
+.form-container .half .item {
+  width: 100%; }
+
+@media screen and (max-width: 360px) {
   .main h1 {
     font-size: 1.6rem;
     padding: 10px 0 20px 0; }
@@ -845,7 +873,7 @@ p {
     transition: all 0.3s linear;
     border-radius: 5px; } }
 
-@media screen and (max-width: 480px) and (max-width: 300px) {
+@media screen and (max-width: 300px) {
   .areas-container {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     grid-template-rows: minmax(100px, auto);

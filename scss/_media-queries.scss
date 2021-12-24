@@ -1,20 +1,9 @@
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 830px) {
 
-    .main h1 {
-        font-size:2.8rem;
-        }
-
-    .main p {
-        padding: 1rem 2.5rem;
-        
-    }
-
-    }
-
-@media screen and (max-width: 786px) {
-    .logo-nav-redes-conteiner{
+    .logo-nav-redes-conteiner {
         display: flex;
-        align-content: space-between;
+        justify-content: space-around;
+        align-items: center; 
     }
 
         .navLabel {
@@ -41,19 +30,15 @@
             clip-path: inset(0 0 0 0);
         }
 
-
-
         .navInput:checked + .navMenu ul  {
             padding-top: 50px;
         }
-
 
         .navInput:checked + .navMenu ul li {
             display: flex;
             flex-direction: column;
             justify-items: center;
             padding: 5px;
-          
         }
 
         .navInput:checked + .navMenu ul li a {
@@ -69,34 +54,42 @@
                 text-decoration: underline;
             } 
 
-
 /* FOOTER FOOTER FOOTER FOOTER */
 
-.contact-info {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-    .card {
-        width: 100%;
-        max-width: 300px;
-        padding-bottom: 20px;
-        margin: 10px 0;
-    }
-    }   
+        .card {
+            width: 100%;
+            max-width: 300px;
+            padding-bottom: 20px;
+            margin: 10px 0;
+        }
+        }   
 
-.card{
-    min-width: 250px;
-    }
-   
+    .card{
+        min-width: 250px;
+        }
+    
 /* INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX */
 
-.main {
-    padding: 120px 0 0 0;
-    
-}
+
+    .main {
+        padding: 120px 0 0 0;
+    }
 
     .main h1 {
+        font-size:2.6rem;
+        padding-top: 20px;
+        }
+
+    .main p {
+        padding: 1rem 2.5rem;
+        
+    }
+    /* .main h1 {
         font-size:2.6rem;
         padding: 20px 0 40px 0;
         }
@@ -104,7 +97,7 @@
     .main p {
         font-size: 1.3rem;
         padding:10px 0 10px 0;
-    }
+    } */
 
     .main p:last-child {
         
@@ -141,17 +134,18 @@
     }
 
     .main h1 {
-        
-        font-size:2.4rem;
+        font-size:2.2rem;
         padding-bottom: 40px;
-        
+         
         }
 
     .main p {
         font-size: 1.2rem;
         padding-bottom: 20px;
+        padding: 1rem 1.5rem;
+    } 
+        
     }
-
     .gridContainer {
         margin-bottom: 350px;
     }
@@ -164,19 +158,12 @@
         font-size: 1.2rem;  
     } 
     
-        .sobremi-containerTabla p {
-            color: black;
-            text-align: center;
-        }
-    
     .footerContainer {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-content: space-around;
         justify-items: center;
-    }
-
     }
 
     .contacto p {
@@ -215,7 +202,6 @@
 
 }    
 
-
 @media screen and (max-width: 480px) {
 
     .navInput:checked + .navMenu {
@@ -241,6 +227,14 @@
         width: 30px;
         height: 30px;
     }
+
+     /* FOOTER FOOTER FOOTER FOOTER */
+  
+     .footer-container .newsletter .email-box:hover > .t-box,.tbox:focus {
+            width: 50%;
+            padding: 0 10px;
+        }
+     }
 
     .footer-container .newsletter h3 {
         font-size: 1.4rem;
@@ -271,10 +265,10 @@
                     width: 60px;
                     height: 60px;
                     text-align: center;
-                    line-height: 60px !important;
+                    line-height: 60px;
                     border-radius: 50%;
                     transition: 0.3s linear;
-
+                    
                     .card-icon i {
                         width: 30px;
                         height: 30px;
@@ -284,9 +278,16 @@
         }
     }
 
+    .footer-container .contact-info .card:hover .card-icon {
+        background: none;
+        color: #f2f2f2;
+        transform: scale(1.2);
+    }
+
+    
     .main h1 {
-        font-size:2.2rem;
-        padding: 10px 0px 40px;
+        font-size:1.8rem;
+        padding: 10px 0px 10px;
         text-align: center;
         }
 
@@ -326,11 +327,8 @@
             text-align: center;
         }
 
-
     .areas{
-       
         padding-top: 120px;
-       
     }
     .areas-container .box h2 {
         font-size: 1.2rem;
@@ -346,7 +344,6 @@
 
     .novedades {
         padding: 120px 0 50px 0;
-    
             h1 {
                 padding-bottom: 20px;
             }
@@ -371,18 +368,7 @@
         width: 100%;
     }
 
-    /* FOOTER FOOTER FOOTER FOOTER */
-        .btn2 {
-            background-color: rgb(106, 148, 204); 
-            border: none;
-            color: white;
-            padding: 3px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 1rem;
-           
-        }
+   
 
     @media screen and (max-width: 360px) {
         .main h1 {
@@ -486,4 +472,4 @@
             }
 
         }
-}
+
