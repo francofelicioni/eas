@@ -5,7 +5,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image:url("../images/hero-optimized.jpg");
+    background-image:url("../images/heroo3.jpg");
     background-attachment: fixed;
     opacity: 0.9;
     
@@ -13,21 +13,17 @@
 }
 
     .main h1 {
-        padding: 0px;
         text-align: center;
-        font-size:3.6rem;
-        line-height: 2em;
+        font-size:3.2rem;
         font-weight: bold;
         color: whitesmoke;
+        padding: 10px 0 20px 0;
         
         }
 
     .main p {
-        
-        padding: 25px;
-        font-size: 2rem;
+        padding: 1rem 5rem;
+        font-size: 1.4rem;
         line-height: 1em;
         color:white;
-        font-weight: 400;
-        
     }

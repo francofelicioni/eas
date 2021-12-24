@@ -1,5 +1,5 @@
 .sobreMi{
-    padding: 200px 0 0 0;
+    padding: 150px 0 0 0;
 }
 
 .sobremi-container {
@@ -19,32 +19,29 @@
         padding:1em;
     }
 
+    .sobremi-container h1 {
+        padding-top: 40px;
+        margin: 10px;
+        font-size: 3.4rem;
+        line-height: 1.2em;
+        text-align: center;
+        
+    } 
+
 .sobremi-container p {
-    padding-top: 40px;
-    margin: 10px;
+    padding: 0.5rem 2rem;
+    margin-bottom: 1.2em;
     font-size: 1.4rem;
-    line-height: 1.2em;
-    text-align: center;
-    
+    line-height: 1em;
+        
 } 
 
-.sobremi-containerImg  {
-    width: 60%; 
+.sobremi-container Img  {
+    width: 40%; 
     border-radius: 180px;
 }
 
-.sobremi-containerTabla  {
-    width: 90%;    
-    text-align: center;
-    font-size: 1.6rem;
-    line-height:1.2em ;
-    padding: 30px;
-}
 
-    .sobremi-containerTabla p {
-        color: black;
-        text-align: center;
-    }
 
 
 /* ESTILOS DE LA GALERIA DE IMAGENES */
@@ -55,6 +52,10 @@
     grid-auto-rows: 33%;
     padding: 40px;
     grid-gap: 10px;
+
+        h2 {
+            font-size: 1rem;
+        }
 }
 
 .gridItem {
@@ -85,4 +86,7 @@
     width: 100%;
     margin: 0;
     padding: 2px;
+
+
+        
 }

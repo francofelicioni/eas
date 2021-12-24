@@ -3,11 +3,11 @@
     margin:0;
     padding:0;
     // box-sizing: border-box;
-    /* Con border-box, los valores en porcentaje tienen en cuenta el margin y padding para hacer el calculo. 
-    Sino, calculan el ancho total MAS estas dos propiedades genreando contenedores mas anchos de los que queremos. */
 }
   
 body {
+    margin:0;
+    padding:0;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     color:black;

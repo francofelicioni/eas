@@ -1,5 +1,13 @@
-.novedades-container {
+.novedades {
     padding: 170px 0 50px 0;
+
+        h1 {
+            padding-bottom: 20px;
+        }
+}
+
+
+.novedades-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

@@ -1,125 +1,114 @@
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 870px) {
 
     .main h1 {
-        text-align: center;
-        font-size:2.6rem;
-        font-weight: bold;
-        color: whitesmoke;
+        font-size:2.8rem;
         }
-    }
 
-@media screen and (max-width: 768px) {
-    
-.header {
-        position: fixed;
-        top:0;
-        left: 0;
-        width: 100%;
-    }
-
-.logo-nav-redes-conteiner{
-    display: flex;
-    align-content: space-around;
-}
-
-    .navLabel {
-        display:block;
-        cursor: pointer;
-    }
-
-    .navMenu {
-        display: none;
-    }
-
-    .navInput:checked + .navMenu {
+    .main p {
+        padding: 1rem 2.5rem;
         
-        background: rgb(34, 41, 75);
-        position: fixed;        
-        top:120px;
-        left:0;
-        bottom: 0;
-        width: 100%;
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
     }
 
-    .navInput:checked + .navMenu ul li {
-        display: flex;
-        flex-direction: column;
-        justify-content:space-around;
-        justify-items: center;
-        margin: 10px;
-        padding: 5px;
-        width: 100%;
     }
 
-    .navInput:checked + .navMenu ul li a {
-    
-        display: block;
-        background-color: rgb(106, 148, 204);
-        padding: 0px 20px;
-        transition: all 0.2s linear;
-        border-radius: 5px;
+@media screen and (max-width: 786px) {
+    .logo-nav-redes-conteiner{
+        display: flex;
+        align-content: space-between;
+    }
+
+        .navLabel {
+            display:block;
+            cursor: pointer;
         }
-    
-    /* .navInput:checked + .navMenu ul li a:hover {
-            background-color: rgb(34, 41, 75);
-    
-        } */
 
-    .redesHeader{
-        display: flex;
-        flex-direction: column;
-    }
+        .navMenu {
+            background: rgb(34, 41, 75);
+            position: fixed;        
+            top:120px;
+            left:0;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            clip-path: inset(0 0 100% 0);
+            transition: clip-path 0.5s ease-in-out;
+        }
+
+        .navInput:checked + .navMenu {
+            clip-path: inset(0 0 0 0);
+        }
+
+
+
+        .navInput:checked + .navMenu ul  {
+            padding-top: 50px;
+        }
+
+
+        .navInput:checked + .navMenu ul li {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            padding: 5px;
+          
+        }
+
+        .navInput:checked + .navMenu ul li a {
+           display: block;
+            background-color: rgb(106, 148, 204);
+            padding: 0px 80px;
+           /*  transition: all 0.2s linear; */
+            border-radius: 3px;
+            }
+        
+        .navInput:checked + .navMenu ul li a:hover {
+                background: transparent;
+                text-decoration: underline;
+            } 
+
 
 /* FOOTER FOOTER FOOTER FOOTER */
 
-.footerContainer {
+.contact-info {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        padding-bottom: 20px;
+        margin: 10px 0;
+    }
+    }   
+
+.card{
+    min-width: 250px;
+    }
    
-    display: flex;
-    align-content: space-around;
-    
-} 
-
-.footerContainer-iframe{
-    width: 50%;
-    font-size: 1.2rem;
-
-            }
-
 /* INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX ** INDEX */
 
 .main {
     padding: 120px 0 0 0;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    /* background-image:url(/images/banner.jpg); */
     
-    
-
 }
 
     .main h1 {
-        padding: 10px;
-        text-align: center;
-        font-size:2.4rem;
-        font-weight: bold;
-        color: whitesmoke;
-        
+        font-size:2.6rem;
+        padding: 20px 0 40px 0;
         }
 
     .main p {
-        width: 100%;
-        padding: 0 0px 50px 0;
-        font-size: 1.6rem;
-        line-height: 1em;
-        color:white;
+        font-size: 1.3rem;
+        padding:10px 0 10px 0;
+    }
+
+    .main p:last-child {
         
+        padding-bottom: 50px;
     }
 
 /* ESTILOS GRID SOBRE MI */
@@ -143,93 +132,42 @@
         cursor: pointer;
 
     }
-
-
-   /*  .novedades p {
-        color: black;
-        font-size: 1.4rem;
-        padding: 20px;
-    }
-
-    .novedades h2 {
-        padding: 0px;
-        text-align: center;
-        font-size:2rem;
-        font-weight: bold;
-    }
-
-    .novedades h3 {
-        padding: 0px;
-        text-align: center;
-        font-size:2rem;
-        font-weight: bold;
-    }
-
-    .item {
-        font-size: 1.4rem;
-
-    } */
         
 }
 
-@media screen and (max-width: 680px) {
-
-
+@media screen and (max-width: 685px) {
     .container {
         width: 90%;
+    }
 
+    .main h1 {
+        
+        font-size:2.4rem;
+        padding-bottom: 40px;
+        
+        }
+
+    .main p {
+        font-size: 1.2rem;
+        padding-bottom: 20px;
     }
 
     .gridContainer {
         margin-bottom: 350px;
-        
     }
 
-    .sobremi-containerImg  {
-        width: 50%; 
-        border-radius: 180px;
-    }
-    
-    .sobremi-containerTabla  {
-            
-        text-align: center;
-        font-size: 1.3rem;
-        line-height:1.1em ;
-       
-    }
+    .sobremi-container h1 {
+        font-size: 2.8rem;
+    } 
+
+    .sobremi-container p {
+        font-size: 1.2rem;  
+    } 
     
         .sobremi-containerTabla p {
-            
             color: black;
             text-align: center;
         }
-
-
-    /* .areas h1 {
-        padding: 30px 0 ;
-
-    }
-
-    .areas p{
-
-        font-size: 1.6rem;
-    } */
-
-   /*  .novedades-container {
-        display: flex;
-        flex-direction: column;
-        align-content: space-around;
-       
-
-    }
-
-    .novedades-container art {
-        
-        margin:20px;
-        padding: 20px;
-
-    }    
-     */
     
     .footerContainer {
         width: 100%;
@@ -237,213 +175,204 @@
         flex-direction: column;
         align-content: space-around;
         justify-items: center;
-
-        
     }
 
-    .footerContainer-newsletter{
-         width: 90%;
-
     }
-    
-    .footerContainer-iframe {
-        width: 90%;
-        padding: 10%;
-        font-size: 1.2rem;
-        }
-
-        .footerContainer-iframe p {
-        
-            padding:0;
-            padding-bottom: 10px;
-            }
-
-    }
-    
-   /*  .novedades-container{
-        display: flex;
-        align-content: space-around;
-        margin:10px;
-        padding: 10px;
-    }
-
-    .novedades-container art{
-        width: 100%;
-        padding: 10px;
-
-    } */
-
 
     .contacto p {
-        
         font-size:1.2rem;
-       
     }
 
-
+    
 
 @media screen and (max-width: 500px) {
-
-    
-    
+ 
     .areas-container .box:nth-child(1) {
-    
         grid-column: span 1;
         grid-row: span 1;
     }
     
     .areas-container .box:nth-child(2) {
-    
         grid-column: span 1;
         grid-row: span 1;
     }
     .areas-container .box:nth-child(3) {
-    
         grid-column: span 1;
         grid-row: span 1;
     }
     .areas-container .box:nth-child(4) {
-    
         grid-column: span 1;
         grid-row: span 1;
     }
     .areas-container .box:nth-child(5) {
-    
         grid-column: span 1;
         grid-row: span 1;
     }
     .areas-container .box:nth-child(6) {
-    
         grid-column: span 1;
         grid-row: span 1;
     }
-
-
 
 }    
 
 
 @media screen and (max-width: 480px) {
 
+    .navInput:checked + .navMenu {
+            
+        top:90px;
+        }
+
+   .header {
+       height: 90px;
+   }
+
+    .logo {
+        width: 80px;
+        padding-top: 2px;
+    }
+    
+    .navImg {
+        width:50px; 
+        height:50px;
+    }
+
+    .redesHeader img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-container .newsletter h3 {
+        font-size: 1.4rem;
+    }
+
+    .footer-container .newsletter p {
+        font-size: 1rem;
+    }
+
+    .footer-container .contact-info .card {
+        height: 120px;
+    }
+
+    .footer-container .contact-info .card  {
+        padding:0;
+    }
+
+    .footer-container .contact-info .card p {
+        font-size: 0.9rem;
+    }
+
+    .footer-container{
+        .contact-info{
+            .card {
+                .card-icon {
+                    font-size: 20px;
+                    background: #f2f2f2;
+                    width: 60px;
+                    height: 60px;
+                    text-align: center;
+                    line-height: 60px !important;
+                    border-radius: 50%;
+                    transition: 0.3s linear;
+
+                    .card-icon i {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+
     .main h1 {
+        font-size:2.2rem;
         padding: 10px 0px 40px;
         text-align: center;
-        font-size:2.2rem;
-        line-height: 1.2em;
-        font-weight: bold;
-        color: whitesmoke;
-        
         }
 
     .main p {
         width: 100%;
-        padding: 0 0px 50px 0;
-        font-size: 1.4rem;
-        line-height: 0.8em;
-        color:white;
-        
+        font-size: 1rem;
     }
 
-    .gridContainer {
-        margin-bottom: 230px;
-        
+    .sobreMi{
+        padding: 100px 0 0 0;
     }
 
-    .sobremi-containerImg  {
-        width: 45%; 
-        border-radius: 180px;
+    .sobremi-container img {
+        width: 60%;
     }
+
+    .sobremi-texto h1 {
+        font-size: 2.2rem;
+        padding-bottom: 20px;
+        margin:0;
+    }
+
+    .sobremi-texto p {
+        font-size: 1rem;
+        padding: 0;
+    }
+    
     
     .sobremi-containerTabla  {
             
         text-align: center;
         font-size: 1.2rem;
         line-height:1em ;
-       
     }
-    
-        .sobremi-containerTabla p {
-            
+        .sobremi-containerTabla p { 
             color: black;
             text-align: center;
-            
         }
 
-    /* .areas {
-        width: 90%;
 
+    .areas{
+       
+        padding-top: 120px;
+       
     }
-
-    .areas h1 {
-        font-size: 2.4rem;
-
-    }
-
-    .areas p {
+    .areas-container .box h2 {
         font-size: 1.2rem;
-
-    } */
-
-    /* .novedades p {
-     font-size: 1.3rem;
-
+    }
+    .areas-container .box p {
+        font-size: 1rem;
     }
 
-    .novedades-container art{
+    .areas-container .box img {
+        width: 60px;
+        height: 90px;
+    }
+
+    .novedades {
+        padding: 120px 0 50px 0;
+    
+            h1 {
+                padding-bottom: 20px;
+            }
+    }
+
+    .contacto {
+        padding: 70px 0px 20px 0px;
+    }
+
+    .form-container .half {
+        flex-direction: column;
+    }
+    .form-container .action {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-container .action input {
+        margin-bottom: 10px;
         width: 100%;
-        padding: 10px;
-        font-size: 1.3rem;
-
     }
-
-    .novedades p {
-        color: black;
-        font-size: 1.2rem;
-        padding: 20px;
+    .form-container .half .item {
+        width: 100%;
     }
-
-    .novedades h2 {
-        padding: 0px;
-        text-align: center;
-        font-size:1.8rem;
-        font-weight: bold;
-    }
-
-    .novedades h3 {
-        padding: 0px;
-        text-align: center;
-        font-size:1.6rem;
-        font-weight: bold;
-    }
-
-    .item {
-        font-size: 1.4rem;
-
-    } */
 
     /* FOOTER FOOTER FOOTER FOOTER */
-
-    .footerContainer-newsletter{
-         width: 90%;
-
-    }
-    
-    .footerContainer-iframe {
-        width: 90%;
-        padding: 10%;
-        font-size: 1.2rem;
-        }
-
-        .footerContainer-iframe p {
-        
-            padding:0;
-            padding-bottom: 10px;
-            }
-                
-    }
-
         .btn2 {
-    
             background-color: rgb(106, 148, 204); 
             border: none;
             color: white;
@@ -455,31 +384,19 @@
            
         }
 
-        
-
     @media screen and (max-width: 360px) {
-
         .main h1 {
-            padding: 10px 0px 40px;
-            text-align: center;
-            font-size:1.8rem;
-            line-height: 0.8em;
-            font-weight: bold;
-            color: whitesmoke;
             
+            font-size:1.6rem;
+            padding: 10px 0 20px 0;
             }
     
         .main p {
-            width: 100%;
-            padding: 20px;
-            font-size: 1.2rem;
-            line-height: 1em;
-            color:white;
-            text-align: center;
-            width: 100%;
+           
+            font-size: 0.8rem;
+            padding: 10px 0 10px 0;
             
         }
-
 
         .sobremi-containerTabla {
             margin: 0 100px;
@@ -492,66 +409,9 @@
             font-size: 1.2rem;
         }
         
-        .areas container {
-            width: 90%;
-
-        }
-    
     
         /*     * FOOTER FOOTER FOOTER FOOTER */
     
-        .footerContainer {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-content: space-around;
-            justify-items: center;
-    
-            
-        }
-    
-        .footerContainer-newsletter, .footerEnd{
-             width: 90%;
-             padding-top: 30px;
-    
-        }
-
-        .footerContainer-newsletter h3 {
-            width: 100%;
-            font-size: 1.4rem;
-            padding-bottom: 10px;
-            
-        }
-
-        .footerContainer-newsletter p {
-            text-align: center;
-            
-        }
-
-        .footerContainer-newsletter input {
-            width: 100%;
-            
-        }
-        
-        
-        .footerContainer-iframe {
-            display: none;
-                    
-        }
-
-        
-       /*  .areas h1 {
-            font-size: 2.2rem;
-            padding: 30px 0;
-    
-        }
-    
-        .areas p {
-            font-size: 1rem;
-    
-        } */
-    
-
         .btnFooter {
     
             background-color: rgb(106, 148, 204); 
@@ -595,87 +455,35 @@
             border-radius: 5px;
             
         }
-
-         /* .novedades p {
-            color: black;
-            font-size: 1rem;
-            padding: 15px 0;
-        }
-    
-        .novedades h2 {
-            padding: 0px;
-            text-align: center;
-            font-size:1.6rem;
-            font-weight: bold;
-        }
-    
-        .novedades h3 {
-            padding: 10px;
-            text-align: center;
-            font-size:1.4rem;
-            font-weight: bold;
-        }
-    
-        .item {
-            font-size: 1rem;
-            padding: 0;
-        }
-
-        .item li {
-            padding: 10px 0;
-        }
-
-        .contacto h2 {
-            font-size:1.4rem;
-            padding:5px 0;
-        } 
-        */
-    
-        }
-
+    }
 
 
         @media screen and (max-width: 300px) {
-
-
             .areas-container {
                 grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
                 grid-template-rows: minmax(100px,auto);
                 margin: 20px;
                 grid-gap:5px;
-                
-            
             }
             
             .areas-container .box {
-                
                 padding: 10px;
-                
                 font-size: 0.8rem;
-                
             }
 
             .areas-container .box h2 {
-               
-                
                 font-size:1.2rem;
-                
             }
             
             .areas-container .box p {
-               
-                
                 padding: 10px 0;
-                
             }
-
 
             .areas-container .box img {
                 position:relative;
                 max-width:60px;
                 padding: 5px 0 10px 0;
             }
-            
 
         }
-
+}
