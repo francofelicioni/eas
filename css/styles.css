@@ -119,7 +119,7 @@ p {
 
 .main {
   padding: 150px 0 50px 0px;
-  width: 100%;
+  /*   width: 100%; */
   /*   height: 100%; */
   background-size: cover;
   background-repeat: no-repeat;
@@ -141,27 +141,26 @@ p {
   line-height: 1em;
   color: white; }
 
-.sobremi .container, .sobremi .footerContainer {
-  height: 100%; }
+.sobremi {
+  margin-bottom: 100px; }
 
 .sobremi-img-texto {
   padding-top: 130px; }
 
 .sobremi-img-texto h1 {
-  padding-top: 40px;
-  margin: 10px;
-  font-size: 3.4rem;
+  padding: 40px 0 20px 0;
+  font-size: 3.2rem;
   line-height: 1.2em;
   text-align: center; }
 
 .sobremi-img-texto p {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 3rem;
   margin-bottom: 1.2em;
   font-size: 1.2rem;
   line-height: 1em; }
 
 .sobremi-img-texto img {
-  width: 50%;
+  width: 35%;
   border-radius: 220px; }
 
 /* ESTILOS DE LA GALERIA DE IMAGENES */
@@ -270,7 +269,7 @@ p {
 .novedades {
   padding: 170px 0 50px 0; }
   .novedades h1 {
-    padding-bottom: 20px; }
+    padding: 20px 0; }
 
 .novedades-container {
   display: flex;
@@ -280,7 +279,7 @@ p {
 .novedades-container p {
   color: black;
   font-size: 1rem;
-  padding: 20px; }
+  padding: 5px 20px 0px 20px; }
 
 .novedades-container h2 {
   padding: 0px;
@@ -298,8 +297,7 @@ p {
 .card {
   height: 500px;
   width: 300px;
-  /* width: 300px;
-        height: 500px; */
+  height: 520px;
   margin: 10px;
   border: 1px solid rgba(0, 0, 0, 0.103);
   border-radius: 15px;
@@ -628,22 +626,23 @@ p {
   .main p:last-child {
     padding-bottom: 50px; }
   /* ESTILOS GRID SOBRE MI */
-  /*  .sobremi-img-texto {
-        padding-top: 100px;
+  /* .gridItem:nth-child(6) {
+        grid-column-end: span 2 ;
+    
     } */
-  /* .gridContainer {
-        margin-bottom: 1000px;
-        
-    } */
-  .gridContainer {
-    grid-template-columns: repeat(2, 1fr); }
-  .gridItem:nth-child(6) {
-    grid-column-end: span 2; }
   .navLabel {
     display: block;
     cursor: pointer; } }
 
 @media screen and (max-width: 685px) {
+  .footerContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-items: center; }
+  .contacto p {
+    font-size: 1.2rem; }
   .container, .footerContainer {
     width: 90%; }
   .main h1 {
@@ -652,28 +651,14 @@ p {
   .main p {
     font-size: 1.2rem;
     padding-bottom: 20px;
-    padding: 1rem 1.5rem; } }
+    padding: 1rem 1.5rem; }
+  .sobremi-container p {
+    font-size: 1.2rem; }
+  .sobremi-img-texto img {
+    width: 40%;
+    border-radius: 220px; } }
 
-.gridContainer {
-  margin-bottom: 350px; }
-
-/* .sobremi-container h1 {
-        font-size: 2.8rem;
-    }  */
-.sobremi-container p {
-  font-size: 1.2rem; }
-
-.footerContainer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-  justify-items: center; }
-
-.contacto p {
-  font-size: 1.2rem; }
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 685px) and (max-width: 500px) {
   .areas-container .box:nth-child(1) {
     grid-column: span 1;
     grid-row: span 1; }
@@ -691,9 +676,14 @@ p {
     grid-row: span 1; }
   .areas-container .box:nth-child(6) {
     grid-column: span 1;
-    grid-row: span 1; } }
+    grid-row: span 1; }
+  .sobremi-img-texto h1 {
+    font-size: 2.8rem; }
+  .sobremi-img-texto p {
+    font-size: 1.2rem;
+    padding: 0; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 685px) and (max-width: 480px) {
   .navInput:checked + .navMenu {
     top: 90px; }
   .header {
@@ -712,121 +702,86 @@ p {
     width: 50%;
     padding: 0 10px; } }
 
-.footer-container .newsletter h3 {
-  font-size: 1.4rem; }
-
-.footer-container .newsletter p {
-  font-size: 1rem; }
-
-.footer-container .contact-info .card {
-  height: 120px; }
-
-.footer-container .contact-info .card {
-  padding: 0; }
-
-.footer-container .contact-info .card p {
-  font-size: 0.9rem; }
-
-.footer-container .contact-info .card .card-icon {
-  font-size: 20px;
-  background: #f2f2f2;
-  width: 60px;
-  height: 60px;
-  text-align: center;
-  line-height: 60px;
-  border-radius: 50%;
-  transition: 0.3s linear; }
-  .footer-container .contact-info .card .card-icon .card-icon i {
-    width: 30px;
-    height: 30px; }
-
-.footer-container .contact-info .card:hover .card-icon {
-  background: none;
-  color: #f2f2f2;
-  transform: scale(1.2); }
-
-/* .main h1 {
-        font-size:1.8rem;
-        padding: 10px 0px 10px;
+@media screen and (max-width: 685px) {
+  .footer-container .newsletter h3 {
+    font-size: 1.4rem; }
+  .footer-container .newsletter p {
+    font-size: 1rem; }
+  .footer-container .contact-info .card {
+    height: 120px; }
+  .footer-container .contact-info .card {
+    padding: 0; }
+  .footer-container .contact-info .card p {
+    font-size: 0.9rem; }
+  .footer-container .contact-info .card .card-icon {
+    font-size: 20px;
+    background: #f2f2f2;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    transition: 0.3s linear; }
+    .footer-container .contact-info .card .card-icon .card-icon i {
+      width: 30px;
+      height: 30px; }
+  .footer-container .contact-info .card:hover .card-icon {
+    background: none;
+    color: #f2f2f2;
+    transform: scale(1.2); }
+  .sobreMi {
+    padding: 100px 0 0 0; }
+  .sobremi-img-texto h1 {
+    font-size: 2.4rem; }
+  .sobremi-img-texto p {
+    font-size: 1rem; }
+  .sobremi-img-texto img {
+    width: 60%; }
+  /* .sobremi-containerTabla  {
+            
         text-align: center;
-        }
+        font-size: 1.2rem;
+        line-height:1em ;
+    }
+        .sobremi-containerTabla p { 
+            color: black;
+            text-align: center;
+        } */
+  .areas {
+    padding-top: 120px; }
+  .areas-container .box h2 {
+    font-size: 1.2rem; }
+  .areas-container .box p {
+    font-size: 1rem; }
+  .areas-container .box img {
+    width: 60px;
+    height: 90px; }
+  .novedades {
+    padding: 120px 0 50px 0; }
+    .novedades h1 {
+      padding-bottom: 20px; }
+  .contacto {
+    padding: 70px 0px 20px 0px; }
+  .form-container .half {
+    flex-direction: column; }
+  .form-container .action {
+    display: flex;
+    flex-direction: column; }
+  .form-container .action input {
+    margin-bottom: 10px;
+    width: 100%; }
+  .form-container .half .item {
+    width: 100%; } }
 
-    .main p {
-        width: 100%;
-        font-size: 1rem;
-    } */
-.sobreMi {
-  padding: 100px 0 0 0; }
-
-.sobremi-container img {
-  width: 60%; }
-
-.sobremi-texto h1 {
-  font-size: 2.2rem;
-  padding-bottom: 20px;
-  margin: 0; }
-
-.sobremi-texto p {
-  font-size: 1rem;
-  padding: 0; }
-
-.sobremi-containerTabla {
-  text-align: center;
-  font-size: 1.2rem;
-  line-height: 1em; }
-
-.sobremi-containerTabla p {
-  color: black;
-  text-align: center; }
-
-.areas {
-  padding-top: 120px; }
-
-.areas-container .box h2 {
-  font-size: 1.2rem; }
-
-.areas-container .box p {
-  font-size: 1rem; }
-
-.areas-container .box img {
-  width: 60px;
-  height: 90px; }
-
-.novedades {
-  padding: 120px 0 50px 0; }
-  .novedades h1 {
-    padding-bottom: 20px; }
-
-.contacto {
-  padding: 70px 0px 20px 0px; }
-
-.form-container .half {
-  flex-direction: column; }
-
-.form-container .action {
-  display: flex;
-  flex-direction: column; }
-
-.form-container .action input {
-  margin-bottom: 10px;
-  width: 100%; }
-
-.form-container .half .item {
-  width: 100%; }
-
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 685px) and (max-width: 360px) {
   .main h1 {
     font-size: 1.6rem;
     padding: 10px 0 20px 0; }
   .main p {
     font-size: 0.8rem;
     padding: 10px 0 10px 0; }
-  .sobremi-containerTabla {
-    margin: 0 100px;
-    font-size: 1rem; }
-  .sobremi-container p {
-    padding: 10px 0;
-    font-size: 1.2rem; }
+  .sobremi-img-texto img {
+    width: 80%; }
   /*     * FOOTER FOOTER FOOTER FOOTER */
   .btnFooter {
     background-color: #6a94cc;
@@ -864,7 +819,7 @@ p {
     transition: all 0.3s linear;
     border-radius: 5px; } }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 685px) and (max-width: 300px) {
   .areas-container {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     grid-template-rows: minmax(100px, auto);

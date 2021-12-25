@@ -2,10 +2,9 @@
     padding: 170px 0 50px 0;
 
         h1 {
-            padding-bottom: 20px;
+            padding: 20px 0;
         }
 }
-
 
 .novedades-container {
     display: flex;
@@ -13,10 +12,12 @@
     justify-content: center;
     
 }
+
+   
     .novedades-container p {
         color: black;
         font-size: 1rem;
-        padding: 20px;
+        padding: 5px 20px 0px 20px;
     }
 
     .novedades-container h2 {
@@ -39,8 +40,8 @@
 
     .card {
         @include card(500px,300px);
-        /* width: 300px;
-        height: 500px; */
+        
+        height: 520px; 
         margin:10px;
         border: 1px solid rgba(0, 0, 0, 0.103);
         border-radius: 15px;

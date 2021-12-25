@@ -106,23 +106,10 @@
 
 /* ESTILOS GRID SOBRE MI */
 
-   /*  .sobremi-img-texto {
-        padding-top: 100px;
-    } */
-    /* .gridContainer {
-        margin-bottom: 1000px;
-        
-    } */
-
-    .gridContainer{
-        grid-template-columns: repeat(2, 1fr);
-
-    }
-
-    .gridItem:nth-child(6) {
+    /* .gridItem:nth-child(6) {
         grid-column-end: span 2 ;
     
-    }
+    } */
 
     .navLabel {
         display:block;
@@ -133,6 +120,19 @@
 }
 
 @media screen and (max-width: 685px) {
+
+    .footerContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        justify-items: center;
+    }
+
+    .contacto p {
+        font-size:1.2rem;
+    }
+
     .container {
         width: 90%;
     }
@@ -149,31 +149,15 @@
         padding: 1rem 1.5rem;
     } 
         
-    }
-    .gridContainer {
-        margin-bottom: 350px;
-    }
-
-    /* .sobremi-container h1 {
-        font-size: 2.8rem;
-    }  */
 
     .sobremi-container p {
         font-size: 1.2rem;  
     } 
-    
-    .footerContainer {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-content: space-around;
-        justify-items: center;
-    }
 
-    .contacto p {
-        font-size:1.2rem;
+    .sobremi-img-texto img  {
+        width: 40%;
+        border-radius: 220px;
     }
-
     
 
 @media screen and (max-width: 500px) {
@@ -204,6 +188,16 @@
         grid-row: span 1;
     }
 
+    .sobremi-img-texto h1 {
+        font-size: 2.8rem;
+        
+    } 
+
+    .sobremi-img-texto p {
+        font-size: 1.2rem;
+        padding:0;
+            
+    } 
 }    
 
 @media screen and (max-width: 480px) {
@@ -289,38 +283,29 @@
     }
 
     
-    /* .main h1 {
-        font-size:1.8rem;
-        padding: 10px 0px 10px;
-        text-align: center;
-        }
-
-    .main p {
-        width: 100%;
-        font-size: 1rem;
-    } */
-
     .sobreMi{
         padding: 100px 0 0 0;
     }
 
-    .sobremi-container img {
-        width: 60%;
-    }
+    .sobremi-img-texto h1 {
+        font-size: 2.4rem;
+        
+    } 
 
-    .sobremi-texto h1 {
-        font-size: 2.2rem;
-        padding-bottom: 20px;
-        margin:0;
-    }
-
-    .sobremi-texto p {
+    .sobremi-img-texto p {
         font-size: 1rem;
-        padding: 0;
-    }
+            
+    } 
+
+    .sobremi-img-texto img{
+        width: 60%;
+            
+    } 
+
+
     
     
-    .sobremi-containerTabla  {
+    /* .sobremi-containerTabla  {
             
         text-align: center;
         font-size: 1.2rem;
@@ -329,7 +314,7 @@
         .sobremi-containerTabla p { 
             color: black;
             text-align: center;
-        }
+        } */
 
     .areas{
         padding-top: 120px;
@@ -388,16 +373,10 @@
             
         }
 
-        .sobremi-containerTabla {
-            margin: 0 100px;
-            font-size: 1rem;
-        }
-
-        .sobremi-container p {
-            
-            padding: 10px 0;
-            font-size: 1.2rem;
-        }
+        .sobremi-img-texto img{
+            width: 80%;
+                
+        } 
         
     
         /*     * FOOTER FOOTER FOOTER FOOTER */
@@ -477,3 +456,4 @@
 
         }
 
+}

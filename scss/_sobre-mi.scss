@@ -1,5 +1,5 @@
-    .sobremi .container {
-        height: 100%;
+    .sobremi {
+        margin-bottom: 100px;
 
     }
 
@@ -9,16 +9,15 @@
 
 
     .sobremi-img-texto h1 {
-        padding-top: 40px;
-        margin: 10px;
-        font-size: 3.4rem;
+        padding: 40px 0 20px 0;
+        font-size: 3.2rem;
         line-height: 1.2em;
         text-align: center;
         
     } 
 
     .sobremi-img-texto p {
-        padding: 0.5rem 2rem;
+        padding: 0.5rem 3rem;
         margin-bottom: 1.2em;
         font-size: 1.2rem;
         line-height: 1em;
@@ -26,7 +25,7 @@
     } 
 
     .sobremi-img-texto img  {
-        width: 50%;
+        width: 35%;
         border-radius: 220px;
     }
 
