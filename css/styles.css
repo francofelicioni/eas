@@ -80,12 +80,6 @@ p {
 .dropdown-menu {
   background: #314c88; }
 
-/* .nav-item a {
-    color:white;
-} */
-/* .navbar-light .navbar-nav .nav-link {
-    color:white;
-} */
 /* MENU NAVEGABLE - HEADER*/
 .navMenu ul {
   list-style: none;
@@ -304,7 +298,7 @@ p {
   object-fit: contain; }
 
 .card:hover {
-  background-color: gray;
+  background-color: #2C2E4B;
   cursor: pointer;
   transform: scale(1.03);
   transition: all 1s ease;
@@ -321,7 +315,6 @@ p {
   color: white; }
 
 .card-image {
-  background-color: aqua;
   height: 120px;
   margin-bottom: 15px;
   border-radius: 15px 15px 0 0; }
@@ -400,7 +393,7 @@ p {
   flex-direction: column;
   margin-top: 5px;
   margin-bottom: 24px;
-  width: 48%; }
+  width: 100%; }
 
 .form-container .half .item input {
   border-radius: 4px;

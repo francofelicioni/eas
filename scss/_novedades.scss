@@ -13,7 +13,6 @@
     
 }
 
-   
     .novedades-container p {
         color: black;
         font-size: 1rem;
@@ -34,13 +33,9 @@
         font-weight: bold;
     }
 
-        
-
     /* ACA PONGO TODO LO DE CARDS */
-
     .card {
         @include card(500px,300px);
-        
         height: 520px; 
         margin:10px;
         border: 1px solid rgba(0, 0, 0, 0.103);
@@ -49,7 +44,7 @@
     } 
 
     .card:hover {
-        background-color:gray;
+        background-color: #2C2E4B;
         cursor: pointer;
         transform: scale(1.03);
         @include transition;
@@ -70,7 +65,6 @@
     }
 
     .card-image {
-        background-color: aqua;
         height: 120px;
         margin-bottom: 15px;
         border-radius: 15px 15px 0 0;

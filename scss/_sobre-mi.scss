@@ -7,13 +7,11 @@
         padding-top: 130px;
     } 
 
-
     .sobremi-img-texto h1 {
         padding: 40px 0 20px 0;
         font-size: 3.2rem;
         line-height: 1.2em;
         text-align: center;
-        
     } 
 
     .sobremi-img-texto p {
@@ -21,7 +19,6 @@
         margin-bottom: 1.2em;
         font-size: 1.4rem;
         line-height: 1em;
-            
     } 
 
     .sobremi-img-texto img  {
@@ -29,9 +26,7 @@
         border-radius: 220px;
     }
 
-
 /* ESTILOS DE LA GALERIA DE IMAGENES */
-
 .gridContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -46,7 +41,6 @@
 .gridItem {
     position: relative;
 }
-
 
 .gridItem:nth-child(2) {
     grid-row-start: span 2 ;
