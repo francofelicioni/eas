@@ -119,7 +119,7 @@ p {
 
 .main {
   padding: 150px 0 50px 0px;
-  /*   width: 100%; */
+  width: 100%;
   /*   height: 100%; */
   background-size: cover;
   background-repeat: no-repeat;
@@ -141,49 +141,34 @@ p {
   line-height: 1em;
   color: white; }
 
-.sobreMi {
-  padding: 150px 0 0 0; }
+.sobremi .container, .sobremi .footerContainer {
+  height: 100%; }
 
-.sobremi-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  justify-items: center; }
+.sobremi-img-texto {
+  padding-top: 130px; }
 
-.carrousel-container {
-  width: 85%;
-  max-width: 850px;
-  margin: 0 auto;
-  height: 100%;
-  padding: 30px; }
-
-.carrousel-container h2 {
-  padding: 1em; }
-
-.sobremi-container h1 {
+.sobremi-img-texto h1 {
   padding-top: 40px;
   margin: 10px;
   font-size: 3.4rem;
   line-height: 1.2em;
   text-align: center; }
 
-.sobremi-container p {
+.sobremi-img-texto p {
   padding: 0.5rem 2rem;
   margin-bottom: 1.2em;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 1em; }
 
-.sobremi-container Img {
-  width: 40%;
-  border-radius: 180px; }
+.sobremi-img-texto img {
+  width: 50%;
+  border-radius: 220px; }
 
 /* ESTILOS DE LA GALERIA DE IMAGENES */
 .gridContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 33%;
-  padding: 40px;
   grid-gap: 10px; }
   .gridContainer h2 {
     font-size: 1rem; }
@@ -643,8 +628,13 @@ p {
   .main p:last-child {
     padding-bottom: 50px; }
   /* ESTILOS GRID SOBRE MI */
-  .gridContainer {
-    margin-bottom: 400px; }
+  /*  .sobremi-img-texto {
+        padding-top: 100px;
+    } */
+  /* .gridContainer {
+        margin-bottom: 1000px;
+        
+    } */
   .gridContainer {
     grid-template-columns: repeat(2, 1fr); }
   .gridItem:nth-child(6) {
@@ -667,9 +657,9 @@ p {
 .gridContainer {
   margin-bottom: 350px; }
 
-.sobremi-container h1 {
-  font-size: 2.8rem; }
-
+/* .sobremi-container h1 {
+        font-size: 2.8rem;
+    }  */
 .sobremi-container p {
   font-size: 1.2rem; }
 
@@ -755,15 +745,16 @@ p {
   color: #f2f2f2;
   transform: scale(1.2); }
 
-.main h1 {
-  font-size: 1.8rem;
-  padding: 10px 0px 10px;
-  text-align: center; }
+/* .main h1 {
+        font-size:1.8rem;
+        padding: 10px 0px 10px;
+        text-align: center;
+        }
 
-.main p {
-  width: 100%;
-  font-size: 1rem; }
-
+    .main p {
+        width: 100%;
+        font-size: 1rem;
+    } */
 .sobreMi {
   padding: 100px 0 0 0; }
 
