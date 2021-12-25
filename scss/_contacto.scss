@@ -102,6 +102,11 @@
         color:#314c88;
     }
 
+    .form-container .icons  {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
     .form-container .icons a {
         background: white;
         border: 2px solid white;
@@ -113,6 +118,7 @@
         margin-right: 10px;
         text-decoration: none;
         color:#314c88;
+        
     }
 
 .form-container .half .item input:focus, .form-container .full textarea:focus {

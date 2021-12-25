@@ -159,6 +159,10 @@
         border-radius: 220px;
     }
     
+    .form-container .half label {
+       
+        width: 100%;
+    }
 
 @media screen and (max-width: 500px) {
  
@@ -232,7 +236,7 @@
             width: 50%;
             padding: 0 10px;
         }
-     }
+     } 
 
     .footer-container .newsletter h3 {
         font-size: 1.4rem;
@@ -302,20 +306,10 @@
             
     } 
 
-
-    
-    
-    /* .sobremi-containerTabla  {
-            
-        text-align: center;
-        font-size: 1.2rem;
-        line-height:1em ;
+    .gridTitle{
+        font-size: 1rem;
+        line-height: 0.9;
     }
-        .sobremi-containerTabla p { 
-            color: black;
-            text-align: center;
-        } */
-
     .areas{
         padding-top: 120px;
     }
@@ -378,9 +372,7 @@
                 
         } 
         
-    
-        /*     * FOOTER FOOTER FOOTER FOOTER */
-    
+        /* FOOTER*/
         .btnFooter {
     
             background-color: rgb(106, 148, 204); 
@@ -455,5 +447,5 @@
             }
 
         }
-
-}
+      
+} 

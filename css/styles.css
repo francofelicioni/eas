@@ -156,7 +156,7 @@ p {
 .sobremi-img-texto p {
   padding: 0.5rem 3rem;
   margin-bottom: 1.2em;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 1em; }
 
 .sobremi-img-texto img {
@@ -442,6 +442,10 @@ p {
   margin-right: 10px;
   color: #314c88; }
 
+.form-container .icons {
+  display: flex;
+  justify-content: space-evenly; }
+
 .form-container .icons a {
   background: white;
   border: 2px solid white;
@@ -656,7 +660,9 @@ p {
     font-size: 1.2rem; }
   .sobremi-img-texto img {
     width: 40%;
-    border-radius: 220px; } }
+    border-radius: 220px; }
+  .form-container .half label {
+    width: 100%; } }
 
 @media screen and (max-width: 685px) and (max-width: 500px) {
   .areas-container .box:nth-child(1) {
@@ -737,16 +743,9 @@ p {
     font-size: 1rem; }
   .sobremi-img-texto img {
     width: 60%; }
-  /* .sobremi-containerTabla  {
-            
-        text-align: center;
-        font-size: 1.2rem;
-        line-height:1em ;
-    }
-        .sobremi-containerTabla p { 
-            color: black;
-            text-align: center;
-        } */
+  .gridTitle {
+    font-size: 1rem;
+    line-height: 0.9; }
   .areas {
     padding-top: 120px; }
   .areas-container .box h2 {
@@ -782,7 +781,7 @@ p {
     padding: 10px 0 10px 0; }
   .sobremi-img-texto img {
     width: 80%; }
-  /*     * FOOTER FOOTER FOOTER FOOTER */
+  /* FOOTER*/
   .btnFooter {
     background-color: #6a94cc;
     border: none;
