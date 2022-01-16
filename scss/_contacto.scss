@@ -1,8 +1,8 @@
-.contacto {
-    padding: 120px 0px 50px 0px;
-    font-size: 1.4rem;
-    color: black;
-}
+    .contacto {
+        padding: 120px 0px 50px 0px;
+        font-size: 1.4rem;
+        color: black;
+    }
 
     .form-container {
         text-align: left;
@@ -121,12 +121,12 @@
         
     }
 
-.form-container .half .item input:focus, .form-container .full textarea:focus {
-    background: white;
-} 
+    .form-container .half .item input:focus, .form-container .full textarea:focus {
+        background: white;
+    } 
 
 
-.form-container .action input[type="submit"]:hover, .form-container .action input[type="reset"]:hover, .form-container .icons a:hover {
-    background: #314c88;
-    color:white;
-}
+    .form-container .action input[type="submit"]:hover, .form-container .action input[type="reset"]:hover, .form-container .icons a:hover {
+        background: #314c88;
+        color:white;
+    }

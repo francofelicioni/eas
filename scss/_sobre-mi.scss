@@ -1,68 +1,61 @@
-    .sobremi {
-        margin-bottom: 100px;
+.sobremi {
+    margin-bottom: 100px;
 
-    }
+}
 
-  .sobremi-img-texto {
-        padding-top: 130px;
-    } 
+.sobremi-img-texto {
+    padding-top: 130px;
+} 
 
-    .sobremi-img-texto h1 {
-        padding: 40px 0 20px 0;
-        font-size: 3.2rem;
-        line-height: 1.2em;
-        text-align: center;
-    } 
+.sobremi-img-texto h1 {
+    padding: 40px 0 20px 0;
+    font-size: 2.8rem;
+    line-height: 1.2em;
+    text-align: center;
+} 
 
-    .sobremi-img-texto p {
-        padding: 0.5rem 3rem;
-        margin-bottom: 1.2em;
-        font-size: 1.4rem;
-        line-height: 1em;
-    } 
+.sobremi-img-texto p {
+    padding: 0.5rem 3rem;
+    margin-bottom: 1.2em;
+    font-size: 1.4rem;
+    line-height: 1em;
+} 
 
-    .sobremi-img-texto img  {
-        width: 35%;
-        border-radius: 220px;
-    }
+.sobremi-img-texto img  {
+    width: 35%;
+    border-radius: 220px;
+}
+
 
 /* ESTILOS DE LA GALERIA DE IMAGENES */
-.gridContainer {
-    display: grid;
+
+.gallery-container {
+    display:grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 33%;
-    grid-gap: 10px;
-
-        h2 {
-            font-size: 1rem;
-        }
+    grid-auto-rows: 200px;
+    padding: 20px;
+    gap: 10px;
 }
 
-.gridItem {
-    position: relative;
-}
-
-.gridItem:nth-child(2) {
-    grid-row-start: span 2 ;
-}
-
-.gridItem:nth-child(6) {
-    grid-column-end: span 3 ;
-}
-
-.gridImg{
+.gridImg {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.gridTitle {
-    position: absolute;
-    bottom:0;
-    color: white;
-    background: rgb(20,38,78);
-    background: linear-gradient(180deg, rgba(20,38,78,1) 0%, rgba(49,76,136,1) 100%);   
-    width: 100%;
-    margin: 0;
-    padding: 2px;
+
+.gridItem:nth-child(2) {
+    grid-row-start: span 3;
 }
+
+.gridItem:nth-child(4) {
+    grid-row-start: span 2;
+    }
+
+.gridItem:nth-child(5) {
+    grid-row-start: span 3;
+    }
+
+.gridItem:nth-child(6) {
+    grid-column-start: span 2;
+    }
