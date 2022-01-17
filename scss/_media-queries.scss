@@ -99,6 +99,10 @@
                 background: transparent;
             } 
 
+        .nav-item:hover {
+            --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+        }
+
     /* FOOTER */
 
     .contact-info {
@@ -167,7 +171,12 @@
         grid-column-start: span 2;
         }
 
-    /* AREAS DE PRACTICA */    
+    /* AREAS DE PRACTICA */ 
+    
+    .areas{
+        width: 100%;
+    
+    }
 
     .areas-container .box h2 {
         font-size: 1.6rem;
@@ -466,6 +475,8 @@
         font-size: 1rem;
         line-height: 0.9;
     }
+
+
 
     /* NOVEDADES */
     .novedades {

@@ -303,7 +303,7 @@ p {
 .card {
   height: 500px;
   width: 300px;
-  height: 520px;
+  height: 440px;
   margin: 10px;
   border: 1px solid rgba(0, 0, 0, 0.103);
   border-radius: 15px;
@@ -470,6 +470,10 @@ p {
   background: #314c88;
   color: white; }
 
+.form-container .action {
+  display: flex;
+  justify-content: space-evenly; }
+
 .footer-container {
   padding: 2rem;
   background-color: #2C2E4B;
@@ -625,6 +629,8 @@ p {
         border-radius: 3px; }
   .navInput:checked + .navMenu ul li a:hover {
     background: transparent; }
+  .nav-item:hover {
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%); }
   /* FOOTER */
   .contact-info {
     flex-direction: column;
@@ -661,6 +667,8 @@ p {
   .gridItem:nth-child(6) {
     grid-column-start: span 2; }
   /* AREAS DE PRACTICA */
+  .areas {
+    width: 100%; }
   .areas-container .box h2 {
     font-size: 1.6rem; }
   .areas-container .box p {
