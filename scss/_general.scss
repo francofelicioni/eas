@@ -82,3 +82,13 @@ p {
     @extend .btn;
     font-size: 1.2rem;
 }
+
+
+.btn-404 {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    background:rgb(34, 41, 75);
+    color:#fff;
+    padding: 10px 25px;
+}

@@ -64,6 +64,41 @@ p {
 .btn2 {
   font-size: 1.2rem; }
 
+.btn-404 {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  background: #22294b;
+  color: #fff;
+  padding: 10px 25px; }
+
+body {
+  background: #2C2E4B;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+h1 {
+  color: white;
+  font-size: 4rem; }
+
+p {
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  color: black; }
+
+.container-404 {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  background: #6a94cc;
+  padding: 20px;
+  box-shadow: 0px 1px 10pc rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  line-height: 1.7; }
+
 .header {
   background-color: #314c88;
   position: fixed;
@@ -849,7 +884,23 @@ p {
     margin-bottom: 10px;
     width: 100%; }
   .form-container .half .item {
-    width: 100%; } }
+    width: 100%; }
+  /* ERROR 404 */
+  h1 {
+    font-size: 2rem; }
+  p {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    color: black; }
+  .container-404 {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    background: #6a94cc;
+    padding: 20px;
+    box-shadow: 0px 1px 10pc rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    line-height: 1.7; } }
 
 @media screen and (max-width: 430px) {
   /* AREAS DE PRACTICA */
