@@ -79,15 +79,13 @@ p {
   display: flex;
   justify-content: center;
   align-items: center; }
-
-h1 {
-  color: white;
-  font-size: 4rem; }
-
-p {
-  font-size: 1.6rem;
-  padding: 0.5rem;
-  color: black; }
+  .error-404 h1 {
+    color: white;
+    font-size: 4rem; }
+  .error-404 p {
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    color: black; }
 
 .container-404 {
   text-align: center;
@@ -212,8 +210,8 @@ p {
   line-height: 1em; }
 
 .sobremi-img-texto img {
-  width: 35%;
-  border-radius: 220px; }
+  width: 60%;
+  border-radius: 120px; }
 
 /* ESTILOS DE LA GALERIA DE IMAGENES */
 .gallery-container {
@@ -249,7 +247,8 @@ p {
   padding-bottom: 50px;
   box-sizing: border-box; }
   .areas h1 {
-    font-size: 2.8rem; }
+    font-size: 2.8rem;
+    color: black; }
 
 .areas-container {
   position: relative;
@@ -311,7 +310,8 @@ p {
   padding: 170px 0 50px 0; }
   .novedades h1 {
     font-size: 2.8rem;
-    padding: 20px 0; }
+    padding: 20px 0;
+    color: black; }
 
 .novedades-container {
   display: flex;
